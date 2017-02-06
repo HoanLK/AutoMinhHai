@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewBag.Title = "Góc tư vấn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="tuvan">
+
+    <!--Phần chinh-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right">
+
+        <!--Banner-->
+        <div class="banner">
+            <img src="~/Content/images/tuvan/banner.png" alt="" class="img-responsive" />
+        </div>
+
+        <!--Các bài viết-->
+        <div class="cacbaiviet col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!--Bài viết-->
+            <div class="baiviet bv-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="~/Content/images/trangchu/goctuvan-1.png" alt="" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>Làm thế nào để kiểm tra lốp có thực sự đã được bơm đầy chưa?</p>
+                    <div class="xemthem">
+                        <a href="@Url.Action("Chitietbaiviet","Home")">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bài viết-->
+            <div class="baiviet bv-2 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="~/Content/images/trangchu/goctuvan-2.png" alt="" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>Thay dầu cho xe bao nhiêu lâu thì hợp lý và tiết kiệm?</p>
+                    <div class="xemthem">
+                        <a href="@Url.Action("Chitietbaiviet","Home")">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bài viết-->
+            <div class="baiviet bv-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="~/Content/images/trangchu/goctuvan-3.png" alt="" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>Công dụng của dây đai phụ tùng động cơ.</p>
+                    <div class="xemthem">
+                        <a href="@Url.Action("Chitietbaiviet","Home")">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bài viết-->
+            <div class="baiviet bv-2 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="~/Content/images/trangchu/goctuvan-1.png" alt="" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>Làm thế nào để kiểm tra lốp có thực sự đã được bơm đầy chưa?</p>
+                    <div class="xemthem">
+                        <a href="@Url.Action("Chitietbaiviet","Home")">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bài viết-->
+            <div class="baiviet bv-1 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="~/Content/images/trangchu/goctuvan-2.png" alt="" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>Thay dầu cho xe bao nhiêu lâu thì hợp lý và tiết kiệm?</p>
+                    <div class="xemthem">
+                        <a href="@Url.Action("Chitietbaiviet","Home")">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bài viết-->
+            <div class="baiviet bv-2 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="~/Content/images/trangchu/goctuvan-3.png" alt="" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>Công dụng của dây đai phụ tùng động cơ.</p>
+                    <div class="xemthem">
+                        <a href="@Url.Action("Chitietbaiviet","Home")">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Số trang-->
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </article>
+
+    <!--Cột bên trái-->
+    <aside class="sidebar col-xs-12 col-xs-12 col-md-3 col-lg-3 pull-left">
+
+        <!--Dịch vụ-->
+        <div class="cacdichvu">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Dịch vụ</p>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/suachua.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Sửa chữa ô tô</p>
+            </a>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Mua bán xe</p>
+            </a>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/phutung.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Phụ tùng</p>
+            </a>
+        </div>
+
+        <!--Tin tức nổi bật-->
+        <div class="tintuc">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Tin tức nổi bật</p>
+
+            <!--Các tin tức-->
+            <ul class="cactintuc">
+                <li><a href="#">Làm thế nào để kiểm tra lốp đã thực sự bơm đầy hay chưa?</a></li>
+                <li><a href="#">Thay dầu cho xe bao nhiêu lâu thì hợp lý và tiết kiệm?</a></li>
+                <li><a href="#">Bộ lọc cabin là gì và bao nhiêu lâu thì nên thay thế?</a></li>
+            </ul>
+        </div>
+    </aside>
+
+</section>

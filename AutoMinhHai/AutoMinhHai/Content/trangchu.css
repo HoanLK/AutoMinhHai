@@ -1,0 +1,872 @@
+/*Trang chủ*/
+.trangchu {
+    height: 1%;
+    overflow: hidden;
+    width: 100%;
+}
+
+    /*Banner*/
+    .trangchu > .banner {
+        background: url(../Content/images/trangchu/banner.png) no-repeat;
+        background-size: 100%;
+        padding: 1em;
+        height: 1%;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        .trangchu > .banner > .ten-co {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 3em;
+            color: rgb(198,40,40);
+            text-shadow: 2px 2px 0 rgb(255, 255, 255);
+        }
+
+        .trangchu > .banner > div {
+            display: inline-block;
+            float: right;
+            padding: 1em;
+            background: rgba(0, 0, 0, .6);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin: 5.5em 0 5em 0;
+        }
+
+            .trangchu > .banner > div > .tieude {
+                font-size: 1.3em;
+            }
+
+            .trangchu > .banner > div > .noidung {
+                font-size: 1.3em;
+                padding: 0 0 0 1.5em;
+                line-height: 1.7em;
+            }
+
+            .trangchu > .banner > div > .phone {
+                height: 1%;
+                overflow: hidden;
+                padding: 1em 1em 0 1em;
+            }
+
+                .trangchu > .banner > div > .phone > i {
+                    float: left;
+                    font-size: 5em;
+                    margin: 0 0.4em 0 0;
+                }
+
+                .trangchu > .banner > div > .phone > p {
+                    float: left;
+                    font-size: 1.6em;
+                    letter-spacing: 2px;
+                }
+
+    /*Mục tìm xe*/
+    .trangchu > .timxe {
+        width: 100%;
+        padding: 0 2em;
+        z-index: 10;
+    }
+
+        /*Phần tiêu đề*/
+        .trangchu > .timxe > .tieude {
+            width: 25%;
+            margin: 0 0 3em 0;
+        }
+
+            /*Phần chữ*/
+            .trangchu > .timxe > .tieude > .text {
+                width: 80%;
+                height: 10em;
+                float: left;
+                background: rgb(198,40,40);
+                color: rgb(255, 255, 255);
+                padding: 1em;
+            }
+
+                .trangchu > .timxe > .tieude > .text > .tieude {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.3em;
+                    margin: 0 0 0.2em 0;
+                }
+
+                .trangchu > .timxe > .tieude > .text > .noidung {
+                    text-align: justify;
+                    margin: 0;
+                }
+
+            /*Phần vẽ hình*/
+            .trangchu > .timxe > .tieude > .draw {
+                width: 20%;
+                height: 100%;
+                float: right;
+            }
+
+                .trangchu > .timxe > .tieude > .draw > .go {
+                    height: 10em;
+                    background: rgb(66,66,66);
+                    color: rgb(255, 255, 255);
+                    display: inline-block;
+                    float: left;
+                    width: 60%;
+                    display: table;
+                }
+
+                    .trangchu > .timxe > .tieude > .draw > .go > p {
+                        display: table-cell;
+                        height: 100%;
+                        vertical-align: middle;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 1.2em;
+                    }
+
+                /*Phần vẽ*/
+                .trangchu > .timxe > .tieude > .draw > .ve {
+                    display: block;
+                    float: right;
+                    width: 40%;
+                    border-left: 1em solid rgb(66,66,66);
+                    border-top: 5em solid transparent;
+                    border-bottom: 5em solid transparent;
+                }
+
+        /*Phần chọn thông tin xe cần tìm*/
+        .trangchu > .timxe > .luachon {
+            width: 50%;
+            height: 10em;
+            float: left;
+            padding: 0 1em;
+            text-align: center;
+        }
+
+            .trangchu > .timxe > .luachon > .step {
+                display: inline-block;
+                margin-top: -2em;
+            }
+
+                .trangchu > .timxe > .luachon > .step > p {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    border-radius: 10em;
+                    background: rgb(198,40,40);
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    padding: 0.5em 1em;
+                    margin: 0 auto;
+                    border: solid 5px rgb(255, 255, 255);
+                }
+
+            .trangchu > .timxe > .luachon > form {
+                margin: 0.5em 0 0 0;
+            }
+
+                .trangchu > .timxe > .luachon > form > label {
+                }
+
+                .trangchu > .timxe > .luachon > form > input {
+                }
+
+        /*Nút tìm kiếm*/
+        .trangchu > .timxe > .timkiem {
+            float: right;
+            padding: 0;
+            background: rgb(66,66,66);
+            width: 25%;
+            height: 10em;
+            text-align: center;
+        }
+
+            .trangchu > .timxe > .timkiem > .step {
+                display: inline-block;
+                margin-left: 0;
+                margin-top: -2em;
+            }
+
+                .trangchu > .timxe > .timkiem > .step > p {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    border-radius: 10em;
+                    background: rgb(198,40,40);
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    padding: 0.5em 1em;
+                    margin: 0 auto;
+                    border: solid 5px rgb(66,66,66);
+                }
+
+            .trangchu > .timxe > .timkiem > button {
+                border: none;
+                background: rgb(66,66,66);
+                width: 100%;
+                height: 3em;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2em;
+            }
+
+    /*Các dịch vụ*/
+    .trangchu > .cacdichvu {
+        width: 100%;
+        height: 1%;
+        overflow: hidden;
+        margin: 0em 0 0 0;
+        padding: 1em 0;
+    }
+
+        /*Từng dịch vụ*/
+        .trangchu > .cacdichvu > .dichvu {
+            width: 20%;
+            height: 28em;
+            padding: 0 0 1em 0;
+            margin: 0 2.5%;
+            border: solid 1px rgba(0, 0, 0, .3);
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, .6);
+        }
+
+            /*Ảnh đại diện*/
+            .trangchu > .cacdichvu > .dichvu > img {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            /*Thông tin dịch vụ*/
+            .trangchu > .cacdichvu > .dichvu > .text {
+                text-align: center;
+                padding: 1em 0.5em;
+            }
+
+                .trangchu > .cacdichvu > .dichvu > .text > .tieude {
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                }
+
+                .trangchu > .cacdichvu > .dichvu > .text > .noidung {
+                    font-size: 1.15em;
+                }
+
+            .trangchu > .cacdichvu > .dichvu > .xemthem {
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                font-size: 1.1em;
+                background: rgb(198,40,40);
+                color: rgb(255, 255, 255);
+                padding: 0.5em 0;
+                border-radius: 2em;
+                display: block;
+                width: 60%;
+                margin-bottom: 1em;
+                margin-left: 20%;
+                transition: all .3s ease-in-out;
+            }
+
+                .trangchu > .cacdichvu > .dichvu > .xemthem > i {
+                    margin: 0 0 0 0.5em;
+                    font-size: 1.1em;
+                }
+
+                .trangchu > .cacdichvu > .dichvu > .xemthem:hover {
+                    box-shadow: 0px 4px 5px rgba(0, 0, 0, .8);
+                }
+
+    /*Tại sao nên chọn chúng tôi*/
+    .trangchu > .taisao {
+        height: 1%;
+        overflow: hidden;
+        margin: 3em 0 3em 0;
+        padding: 1em;
+        border: solid 1px rgba(0, 0, 0, .3);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, .8);
+    }
+
+        /*Ảnh*/
+        .trangchu > .taisao > img {
+        }
+
+        /*Chữ*/
+        .trangchu > .taisao > .text {
+        }
+
+            .trangchu > .taisao > .text > .tieude {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2em;
+            }
+
+            .trangchu > .taisao > .text > .noidung {
+                text-align: justify;
+                font-size: 1.2em;
+            }
+
+            /*Các lý do*/
+            .trangchu > .taisao > .text > .lydo {
+                height: 1%;
+                overflow: hidden;
+                display: table;
+                width: 100%;
+                margin: 0 0 0.8em 0;
+            }
+
+                .trangchu > .taisao > .text > .lydo > .stt {
+                    font-weight: bold;
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                    background: rgb(198,40,40);
+                    color: rgb(255, 255, 255);
+                    font-size: 1.3em;
+                    width: 10%;
+                    height: 2.5em;
+                    margin: 0;
+                }
+
+                .trangchu > .taisao > .text > .lydo > .text {
+                    display: table-cell;
+                    text-align: left;
+                    vertical-align: middle;
+                    font-size: 1.3em;
+                    padding: 0 2em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
+                    background: linear-gradient(to bottom, rgb(158,158,158), rgb(255,255,255), rgb(158,158,158));
+                    width: 90%;
+                    height: 2.5em;
+                    margin: 0;
+                }
+
+    /*Mục tư vấn - mua bán*/
+    .trangchu > .tuvan-muaban {
+        height: 1%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+        /*Góc tư vấn*/
+        .trangchu > .tuvan-muaban > .tuvan {
+            padding: 0 2em;
+            margin: 0;
+        }
+
+            /*Tiêu đề*/
+            .trangchu > .tuvan-muaban > .tuvan > .tieude {
+                width: 100%;
+                margin: 0 0 1em 0;
+                height: 1%;
+                overflow: hidden;
+                padding: 0;
+                border-bottom: solid 3px rgb(198,40,40);
+            }
+
+                .trangchu > .tuvan-muaban > .tuvan > .tieude > .text {
+                    width: 30%;
+                    float: left;
+                    background: rgb(198,40,40);
+                    height: 4em;
+                }
+
+                    .trangchu > .tuvan-muaban > .tuvan > .tieude > .text > p {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 2em;
+                        color: rgb(255, 255, 255);
+                        margin: 0;
+                        height: 2em;
+                        width: 100%;
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: center;
+                        padding: 0 1em;
+                    }
+
+                .trangchu > .tuvan-muaban > .tuvan > .tieude > .ve {
+                    width: 10%;
+                    float: left;
+                    border-left: 3em solid rgb(198,40,40);
+                    border-top: 4em solid transparent;
+                }
+
+            /*Các nài viết*/
+            .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet {
+                height: 1%;
+                overflow: hidden;
+                padding: 0;
+            }
+
+                /*Bài viết*/
+                .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet {
+                    margin: 0 0 2em 0;
+                    padding: 0;
+                    width: 49%;
+                    overflow: hidden;
+                }
+
+                    /*Ảnh đại diện bài viết*/
+                    .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > img {
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 20em;
+                    }
+
+                    /*Tên bài viết*/
+                    .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude {
+                        width: 100%;
+                        height: 45%;
+                        position: absolute;
+                        bottom: -20%;
+                        padding: 1em;
+                        background: rgba(0,0,0,.7);
+                        transition: all .3s ease-in-out;
+                    }
+
+                        .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude:hover {
+                            bottom: 0;
+                        }
+
+                        .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude > p {
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            text-align: justify;
+                            color: rgb(255, 255, 255);
+                            text-decoration: none;
+                            height: 50%;
+                        }
+
+                        .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude > .xemthem {
+                            height: 50%;
+                        }
+
+                            .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude > .xemthem > a {
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                color: rgb(255, 255, 255);
+                                font-size: 1.1em;
+                                background: transparent;
+                                border: solid 1px rgb(255, 255, 255);
+                                border-radius: 2em;
+                                padding: 0.4em 1em;
+                                float: right;
+                                transition: all .3s ease-in-out;
+                            }
+
+                                .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude > .xemthem > a:hover {
+                                    background: rgb(255, 255, 255);
+                                    color: rgb(0, 0, 0);
+                                }
+
+                            .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude > .xemthem > i {
+                                font-size: 1.1em;
+                                margin: 0 0 0 0.5em;
+                            }
+
+        /*Mua bán xe cũ*/
+        .trangchu > .tuvan-muaban > .muaban {
+        }
+
+            /*Tiêu đề*/
+            .trangchu > .tuvan-muaban > .muaban > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2em;
+                padding: 0;
+                margin: 0 0 0.5em 0;
+                height: 2.1em;
+                background: rgb(255,193,7);
+                border-bottom: solid 3px rgb(255,193,7);
+            }
+
+                .trangchu > .tuvan-muaban > .muaban > .tieude > p {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 2.2em;
+                    padding: 0 1em;
+                }
+
+            /*Các sản phẩm*/
+            .trangchu > .tuvan-muaban > .muaban > .cacsanpham {
+                padding: 0;
+            }
+
+                /*Sản phẩm*/
+                .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham {
+                    padding: 0 0 1.5em 0;
+                    margin: 0 0 2em 0;
+                    height: 1%;
+                    overflow: hidden;
+                    border: solid 1px rgba(0,0,0,.2);
+                    box-shadow: 3px 3px 5px rgba(0,0,0,.6);
+                    width: 100%;
+                }
+
+                    /*Ảnh sản phẩm*/
+                    .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > img {
+                        width: 100%;
+                    }
+
+                    /*Thông tin sản phẩm*/
+                    .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin {
+                        padding: 1em;
+                    }
+
+                        /*Tên xe*/
+                        .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .tenxe {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 1.3em;
+                        }
+
+                        /*Thông tin*/
+                        .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .text {
+                            font-size: 1em;
+                        }
+
+                        /*Giá xe*/
+                        .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .gia {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: rgb(198,40,40);
+                            font-size: 1.3em;
+                            float: left;
+                        }
+
+                        /*Nút xem thêm*/
+                        .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .xemthem {
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            background: rgb(255, 255, 255);
+                            color: rgb(198,40,40);
+                            font-size: 1em;
+                            border: solid 1px rgb(198,40,40);
+                            border-radius: 2em;
+                            padding: 0.3em 1em;
+                            float: right;
+                            transition: all .3s ease-in-out;
+                        }
+
+                            .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .xemthem:hover {
+                                background: rgb(198,40,40);
+                                color: rgb(255,255,255);
+                            }
+
+                            .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .xemthem > i {
+                                margin: 0 0 0 0.5em;
+                            }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+    .trangchu > .banner > div {
+        margin: 0 0 4em 0;
+    }
+
+        .trangchu > .banner > div > .tieude {
+            font-size: 1.2em;
+        }
+
+        .trangchu > .banner > div > .noidung {
+            font-size: 1.2em;
+        }
+
+        .trangchu > .banner > div > .phone {
+            padding: 0em 1em 0 1em;
+        }
+
+            .trangchu > .banner > div > .phone > i {
+                font-size: 4em;
+            }
+
+            .trangchu > .banner > div > .phone > p {
+                font-size: 1.3em;
+            }
+    /*Mục tìm xe*/
+    .trangchu > .timxe {
+        padding: 0 1em;
+    }
+
+        .trangchu > .timxe > .tieude > .text > .tieude {
+            font-size: 1.1em;
+        }
+
+        .trangchu > .timxe > .tieude > .draw > .go {
+            width: 60%;
+        }
+
+            .trangchu > .timxe > .tieude > .draw > .go > p {
+                font-size: 1em;
+            }
+
+    /*Từng dịch vụ*/
+    .trangchu > .cacdichvu > .dichvu {
+        width: 23%;
+        margin: 0 1%;
+        height: 30em;
+    }
+
+        /*Ảnh đại diện*/
+        .trangchu > .cacdichvu > .dichvu > img {
+            height: 40%;
+        }
+
+        /*Thông tin dịch vụ*/
+        .trangchu > .cacdichvu > .dichvu > .text {
+            height: 50%;
+        }
+
+            .trangchu > .cacdichvu > .dichvu > .text > .tieude {
+                font-size: 1.3em;
+            }
+
+            .trangchu > .cacdichvu > .dichvu > .text > .noidung {
+                font-size: 1.1em;
+            }
+
+        .trangchu > .cacdichvu > .dichvu > .xemthem {
+            bottom: 0;
+        }
+
+            .trangchu > .cacdichvu > .dichvu > .xemthem > i {
+                margin: 0 0 0 0.5em;
+                font-size: 1.1em;
+            }
+
+    /*Góc tư vấn*/
+    .trangchu > .tuvan-muaban > .tuvan {
+        padding: 0 1em;
+    }
+
+        .trangchu > .tuvan-muaban > .tuvan > .tieude > .text > p {
+            font-size: 1.5em;
+            height: 3em;
+        }
+
+    /*Tiêu đề*/
+    .trangchu > .tuvan-muaban > .muaban > .tieude {
+        font-size: 1.5em;
+        height: 2.9em;
+    }
+
+        .trangchu > .tuvan-muaban > .muaban > .tieude > p {
+            height: 2.9em;
+        }
+
+    /*Các sản phẩm*/
+    .trangchu > .tuvan-muaban > .muaban > .cacsanpham {
+        padding: 0;
+    }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Mục tìm xe*/
+    .trangchu > .timxe {
+        padding: 1em;
+        height: 1%;
+        overflow: hidden;
+    }
+
+        /*Phần tiêu đề*/
+        .trangchu > .timxe > .tieude {
+            width: 30%;
+            margin: 2em 0 0 0;
+        }
+
+            .trangchu > .timxe > .tieude > .text > .tieude {
+                font-size: 1em;
+            }
+
+            /*Phần vẽ*/
+            .trangchu > .timxe > .tieude > .draw > .ve {
+                display: table;
+            }
+
+        .trangchu > .timxe > .luachon > .step {
+            margin-top: 0;
+        }
+
+        /*Nút tìm kiếm*/
+        .trangchu > .timxe > .timkiem {
+            width: 20%;
+            margin: 2em 0 0 0;
+        }
+
+    /*Các dịch vụ*/
+    .trangchu > .cacdichvu {
+        margin: 0;
+    }
+
+        /*Từng dịch vụ*/
+        .trangchu > .cacdichvu > .dichvu {
+            width: 46%;
+            height: 35em;
+            margin: 0 2% 2em 2%;
+        }
+
+            /*Ảnh đại diện*/
+            .trangchu > .cacdichvu > .dichvu > img {
+                height: 45%;
+            }
+
+            /*Thông tin dịch vụ*/
+            .trangchu > .cacdichvu > .dichvu > .text {
+                height: 40%;
+            }
+
+    /*Tư vấn*/
+    .trangchu > .tuvan-muaban > .tuvan > .tieude > .text > p {
+        font-size: 1.5em;
+        height: 3em;
+    }
+
+    /*Tên bài viết*/
+    .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude {
+        bottom: 0;
+    }
+
+    /*Mua bán xe cũ*/
+    .trangchu > .tuvan-muaban > .muaban {
+        padding: 0 2em;
+    }
+
+        /*Tiêu đề*/
+        .trangchu > .tuvan-muaban > .muaban > .tieude {
+            font-size: 2em;
+        }
+
+        /*Sản phẩm*/
+        .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham {
+            width: 49%;
+        }
+
+            /*Giá xe*/
+            .trangchu > .tuvan-muaban > .muaban > .cacsanpham > .sanpham > .thongtin > .gia {
+                font-size: 1.2em;
+            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Mục tìm xe*/
+    .trangchu > .timxe {
+        width: 95%;
+        margin: 1em auto;
+        padding: 1em;
+        height: 1%;
+        overflow: hidden;
+        border: solid 1px rgba(0, 0, 0, .3);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, .6);
+    }
+
+        /*Phần tiêu đề*/
+        .trangchu > .timxe > .tieude {
+            width: 100%;
+            margin: 0;
+        }
+
+            /*Phần chữ*/
+            .trangchu > .timxe > .tieude > .text {
+                width: 100%;
+                float: none;
+                padding: 1em;
+            }
+
+                .trangchu > .timxe > .tieude > .text > .tieude {
+                    font-size: 1.5em;
+                }
+
+                .trangchu > .timxe > .tieude > .text > .noidung {
+                    font-size: 1.2em;
+                }
+
+            /*Phần vẽ hình*/
+            .trangchu > .timxe > .tieude > .draw {
+                width: 100%;
+            }
+
+                .trangchu > .timxe > .tieude > .draw > .go {
+                    height: auto;
+                    width: 100%;
+                }
+
+                    .trangchu > .timxe > .tieude > .draw > .go > p {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.5em;
+                        padding: 0.1em 0;
+                    }
+
+                /*Phần vẽ*/
+                .trangchu > .timxe > .tieude > .draw > .ve {
+                    width: 100%;
+                    border-top: 1.5em solid rgb(66,66,66);
+                    border-left: 11.5em solid transparent;
+                    border-right: 11.5em solid transparent;
+                }
+
+        /*Phần chọn thông tin xe cần tìm*/
+        .trangchu > .timxe > .luachon {
+            width: 100%;
+            height: auto;
+            margin: 0em 0 5em 0;
+        }
+
+            .trangchu > .timxe > .luachon > .step {
+                margin-top: 0em;
+            }
+
+        /*Nút tìm kiếm*/
+        .trangchu > .timxe > .timkiem {
+            width: 100%;
+        }
+
+    /*Các dịch vụ*/
+    .trangchu > .cacdichvu {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        /*Từng dịch vụ*/
+        .trangchu > .cacdichvu > .dichvu {
+            width: 95%;
+            height: 32em;
+            margin: 2em auto;
+        }
+
+    .trangchu > .tuvan-muaban > .tuvan > .tieude > .text {
+        width: 60%;
+    }
+
+        .trangchu > .tuvan-muaban > .tuvan > .tieude > .text > p {
+            font-size: 1.5em;
+            height: 3em;
+        }
+
+    /*Bài viết*/
+    .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet {
+        width: 100%;
+    }
+
+        .trangchu > .tuvan-muaban > .tuvan > .cacbaiviet > .baiviet > .tieude {
+            bottom: 0;
+        }
+
+    /*Mua bán xe cũ*/
+    .trangchu > .tuvan-muaban > .muaban {
+        padding: 0 2em;
+    }
+
+        /*Tiêu đề*/
+        .trangchu > .tuvan-muaban > .muaban > .tieude {
+            font-size: 1.5em;
+        }
+}

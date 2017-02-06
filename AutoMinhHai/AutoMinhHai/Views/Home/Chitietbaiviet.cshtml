@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Bài viết";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="chitietbaiviet">
+
+    <!--Phần chinh-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right">
+
+        <!--Banner-->
+        <div class="banner">
+            <img src="~/Content/images/tuvan/banner.png" alt="" class="img-responsive" />
+        </div>
+
+        <!--Các bài viết-->
+        <div class="baiviet col-xs-12 col-msm12 col-md-12 col-lg-12">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Thay dầu cho xe bao nhiêu lâu thì hợp lý và tiết kiệm</p>
+
+            <!--Ngày đăng-->
+            <p class="ngaydang">Ngày đăng: 08/12/2016</p>
+
+            <!--Nội dung bài viết-->
+            <p class="text">
+                Dầu cho động cơ xe hơi có tác dụng làm giảm ma sát, bảo vệ động cơ khỏi mài mòn,
+                giảm tình trạng nóng máy, đảm bảo tỷ số nén xi-lanh và hiệu suất động cơ ở mức cao nhất,
+                ngoài ra giữ cho động cơ sạch sẽ và chống đóng cặn.
+                Vì trong dầu có nhiều phụ gia để đảm bảo các chức năng trên, nên sau một thời gian sử dụng,
+                phụ gia này tiêu hao đi làm cho dầu xuống cấp. Do đó, dầu cần phải thay đúng lúc..<br />
+                <img src="~/Content/images/baiviet/baiviet.png" alt="" class="img-responsive" />
+            </p>
+        </div>
+
+        <!--Bài viết cùng chuyên mục-->
+        <div class="baivietkhac">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Bài viết cùng chuyên mục</p>
+
+            <!--Các bài viét-->
+            <ul class="cacbaiviet">
+                <li><a href="@Url.Action("Chitietbaiviet","Home")"><i class="fa fa-angle-double-right"></i>Làm thế nào để kiểm tra lốp đã thực sự được bơm căng chưa?</a></li>
+                <li><a href="@Url.Action("Chitietbaiviet","Home")"><i class="fa fa-angle-double-right"></i>Làm thế nào để kiểm tra lốp đã thực sự được bơm căng chưa?</a></li>
+                <li><a href="@Url.Action("Chitietbaiviet","Home")"><i class="fa fa-angle-double-right"></i>Làm thế nào để kiểm tra lốp đã thực sự được bơm căng chưa?</a></li>
+                <li><a href="@Url.Action("Chitietbaiviet","Home")"><i class="fa fa-angle-double-right"></i>Làm thế nào để kiểm tra lốp đã thực sự được bơm căng chưa?</a></li>
+                <li><a href="@Url.Action("Chitietbaiviet","Home")"><i class="fa fa-angle-double-right"></i>Làm thế nào để kiểm tra lốp đã thực sự được bơm căng chưa?</a></li>
+                <li><a href="@Url.Action("Chitietbaiviet","Home")"><i class="fa fa-angle-double-right"></i>Làm thế nào để kiểm tra lốp đã thực sự được bơm căng chưa?</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <!--Cột bên trái-->
+    <aside class="sidebar col-xs-12 col-xs-12 col-md-3 col-lg-3 pull-left">
+
+        <!--Dịch vụ-->
+        <div class="cacdichvu">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Dịch vụ</p>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/suachua.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Sửa chữa ô tô</p>
+            </a>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Mua bán xe</p>
+            </a>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/phutung.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Phụ tùng</p>
+            </a>
+        </div>
+
+        <!--Tin tức nổi bật-->
+        <div class="tintuc">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Tin tức nổi bật</p>
+
+            <!--Các tin tức-->
+            <ul class="cactintuc">
+                <li><a href="#">Làm thế nào để kiểm tra lốp đã thực sự bơm đầy hay chưa?</a></li>
+                <li><a href="#">Thay dầu cho xe bao nhiêu lâu thì hợp lý và tiết kiệm?</a></li>
+                <li><a href="#">Bộ lọc cabin là gì và bao nhiêu lâu thì nên thay thế?</a></li>
+            </ul>
+        </div>
+    </aside>
+</section>

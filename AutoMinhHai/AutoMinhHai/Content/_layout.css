@@ -1,0 +1,417 @@
+﻿header {
+    padding: 0 !important;
+}
+
+    header > .desktop {
+        height: 8em;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .6);
+        padding: 0;
+    }
+
+        /*Logo công ty*/
+        header > .desktop > .logo {
+        }
+
+            header > .desktop > .logo > img {
+                width: 15em;
+                margin: 0.5em auto;
+            }
+
+        /*Menu*/
+        header > .desktop > .menu {
+            height: auto;
+            padding: 0;
+            margin: 1em 0 0 0;
+        }
+
+            header > .desktop > .menu > ul {
+                list-style: none;
+                padding: 0;
+                height: 100%;
+                float: right;
+                margin: 0 5em 0 0;
+            }
+
+                header > .desktop > .menu > ul > li {
+                    height: 100%;
+                }
+
+                    header > .desktop > .menu > ul > li > a {
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        font-size: 1.2em;
+                        display: block;
+                        height: 100%;
+                        padding: 0.5em 1em;
+                        border-top: solid 3px rgb(255,255,255);
+                        transition: all .3s ease-in-out;
+                    }
+
+                        header > .desktop > .menu > ul > li.active > a, header > .desktop > .menu > ul > li > a:hover {
+                            background: #EEEEEE;
+                            border-top: solid 3px rgb(198,40,40);
+                        }
+
+/*Footer*/
+footer {
+    margin: 2em 0 0 0;
+    padding: 1em 0 0 0 !important;
+    height: 1%;
+    overflow: hidden;
+}
+
+    /*Slide các hãng xe*/
+    footer > marquee {
+        padding: 1em 0;
+        border: solid 1px rgba(0, 0, 0, .3);
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
+    }
+
+        footer > marquee > a {
+            width: 25%;
+            margin: 0 2em;
+        }
+
+            footer > marquee > a > img {
+            }
+
+    /*Viền*/
+    footer > .border {
+        height: 2em;
+        margin: 1em 0 0 0;
+        border-top: solid 3px rgba(0, 0, 0, .3);
+    }
+
+    footer > .footer {
+        padding: 0;
+    }
+
+        /*Menu*/
+        footer > .footer > .menu {
+            height: 1%;
+            overflow: hidden;
+            list-style: none;
+            background: linear-gradient(rgb(158,158,158), rgb(255, 255, 255), rgb(158,158,158));
+            padding: 0 2em;
+            margin: 0;
+        }
+
+            footer > .footer > .menu > li {
+                padding: 0;
+            }
+
+                footer > .footer > .menu > li > a {
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    font-size: 1.2em;
+                    display: block;
+                    width: 7em;
+                    padding: 0.5em 0;
+                    margin: 0 0.3em 0 0;
+                    transition: all .3s ease-in-out;
+                }
+
+                    footer > .footer > .menu > li > a:hover {
+                        padding: 0.5em 0.5em;
+                    }
+
+        /*Thông tin*/
+        footer > .footer > .thongtin {
+            height: 1%;
+            overflow: hidden;
+            background: rgb(198,40,40);
+            padding: 1em;
+            color: rgb(255, 255, 255);
+        }
+
+            /*Thông tin công ty*/
+            footer > .footer > .thongtin > .info-co {
+                padding: 0 1em;
+                width: 35%;
+            }
+
+                footer > .footer > .thongtin > .info-co > .tieude {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+
+                footer > .footer > .thongtin > .info-co > .noidung {
+                    font-size: 1.1em;
+                }
+
+                    footer > .footer > .thongtin > .info-co > .noidung > p {
+                        letter-spacing: 1px;
+                        text-align: justify;
+                    }
+
+                        footer > .footer > .thongtin > .info-co > .noidung > p > i {
+                            font-size: 1.2em;
+                            width: 2em;
+                        }
+
+            /*Giới thiệu về công ty*/
+            footer > .footer > .thongtin > .gioithieu {
+                padding: 0 1em;
+                width: 35%;
+            }
+
+                footer > .footer > .thongtin > .gioithieu > .tieude {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+
+                footer > .footer > .thongtin > .gioithieu > .noidung {
+                    font-size: 1.1em;
+                    letter-spacing: 1px;
+                    text-align: justify;
+                }
+
+                    footer > .footer > .thongtin > .gioithieu > .noidung > a {
+                    }
+
+                        footer > .footer > .thongtin > .gioithieu > .noidung > a:hover {
+                        }
+
+            /*Bản đồ*/
+            footer > .footer > .thongtin > .map {
+                padding: 0 3em;
+                width: 30%;
+            }
+
+                footer > .footer > .thongtin > .map > .tieude {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+
+                footer > .footer > .thongtin > .map > div {
+                }
+
+                    footer > .footer > .thongtin > .map > div > iframe {
+                        height: 100%;
+                    }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+    header > .desktop > .logo > img {
+        width: 12em;
+        margin: 1em auto;
+    }
+
+    header > .desktop > .menu > ul > li > a {
+        font-size: 1.1em;
+    }
+
+    /*Thông tin*/
+    footer > .footer > .thongtin {
+        padding: 1em 0;
+    }
+
+        /*Thông tin công ty*/
+        footer > .footer > .thongtin > .info-co {
+            padding: 0 1em;
+        }
+
+            footer > .footer > .thongtin > .info-co > .tieude {
+                font-size: 1.3em;
+            }
+
+            footer > .footer > .thongtin > .info-co > .noidung {
+                font-size: 1em;
+            }
+
+                footer > .footer > .thongtin > .info-co > .noidung > p {
+                    letter-spacing: 0.5px;
+                }
+
+                    footer > .footer > .thongtin > .info-co > .noidung > p > i {
+                        font-size: 1.1em;
+                        width: 1.5em;
+                    }
+
+        /*Giới thiệu về công ty*/
+        footer > .footer > .thongtin > .gioithieu {
+            padding: 0 1em;
+        }
+
+            footer > .footer > .thongtin > .gioithieu > .tieude {
+                font-size: 1.3em;
+            }
+
+            footer > .footer > .thongtin > .gioithieu > .noidung {
+                font-size: 1em;
+                letter-spacing: 0.5px;
+            }
+
+        /*Bản đồ*/
+        footer > .footer > .thongtin > .map {
+            padding: 0 1em;
+        }
+
+            footer > .footer > .thongtin > .map > .tieude {
+                font-size: 1.3em;
+            }
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Menu*/
+    footer > .footer > .menu {
+        padding: 0 1em;
+    }
+
+        footer > .footer > .menu > li {
+            padding: 0;
+        }
+
+            footer > .footer > .menu > li > a {
+                font-size: 1.1em;
+                width: auto;
+                padding: 0.5em 1em;
+                margin: 0;
+            }
+
+    /*Thông tin*/
+    footer > .footer > .thongtin {
+        padding: 1em 0;
+    }
+
+        /*Thông tin công ty*/
+        footer > .footer > .thongtin > .info-co {
+            padding: 0 1em;
+            width: 50%;
+        }
+
+            footer > .footer > .thongtin > .info-co > .tieude {
+            }
+
+            footer > .footer > .thongtin > .info-co > .noidung {
+                font-size: 1.1em;
+            }
+
+                footer > .footer > .thongtin > .info-co > .noidung > p {
+                    letter-spacing: 0.5px;
+                    text-align: left;
+                }
+
+                    footer > .footer > .thongtin > .info-co > .noidung > p > i {
+                        font-size: 1.1em;
+                        width: 1.5em;
+                    }
+
+        /*Giới thiệu về công ty*/
+        footer > .footer > .thongtin > .gioithieu {
+            padding: 0 1em;
+            width: 50%;
+        }
+
+            footer > .footer > .thongtin > .gioithieu > .tieude {
+            }
+
+            footer > .footer > .thongtin > .gioithieu > .noidung {
+                font-size: 1.1em;
+                letter-spacing: 0.5px;
+            }
+
+                footer > .footer > .thongtin > .gioithieu > .noidung > a {
+                }
+
+                    footer > .footer > .thongtin > .gioithieu > .noidung > a:hover {
+                    }
+
+        /*Bản đồ*/
+        footer > .footer > .thongtin > .map {
+            padding: 2em 1em 0 1em;
+            width: 100%;
+            height: 1%;
+            overflow: hidden;
+        }
+
+            footer > .footer > .thongtin > .map > .tieude {
+                font-size: 1.5em;
+                text-align: center;
+            }
+
+            footer > .footer > .thongtin > .map > div > iframe {
+                width: 80%;
+                height: 20em;
+                margin-left: 10%;
+            }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Footer*/
+    footer {
+        margin: 2em 0 0 0;
+        padding: 1em 0 0 0 !important;
+        height: 1%;
+        overflow: hidden;
+    }
+
+        /*Menu*/
+        footer > .footer > .menu {
+            padding: 1em;
+        }
+
+            footer > .footer > .menu > li {
+                width: 100%;
+                text-align: center;
+            }
+
+                footer > .footer > .menu > li > a {
+                    width: 100%;
+                }
+
+        /*Thông tin*/
+        footer > .footer > .thongtin {
+            padding: 1em;
+        }
+
+            footer > .footer > .thongtin > .info-co {
+                width: 100%;
+            }
+
+                footer > .footer > .thongtin > .info-co > .noidung {
+                    font-size: 1em;
+                }
+
+                    footer > .footer > .thongtin > .info-co > .noidung > p {
+                        letter-spacing: 0.5px;
+                        text-align: left;
+                    }
+
+                        footer > .footer > .thongtin > .info-co > .noidung > p > i {
+                            font-size: 1.1em;
+                            width: 1.5em;
+                        }
+
+            /*Giới thiệu về công ty*/
+            footer > .footer > .thongtin > .gioithieu {
+                margin: 3em 0;
+                width: 100%;
+            }
+
+                footer > .footer > .thongtin > .gioithieu > .noidung {
+                    font-size: 1em;
+                    letter-spacing: 0.5px;
+                    text-align: justify;
+                    margin: 0;
+                }
+
+            /*Bản đồ*/
+            footer > .footer > .thongtin > .map {
+                padding: 0 1em;
+                margin: 0;
+                width: 100%;
+            }
+
+                footer > .footer > .thongtin > .map > div > iframe {
+                    width: 100%;
+                }
+}

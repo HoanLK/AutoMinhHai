@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Trang thông tin xe bán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="chitietmuaxe">
+    <!--Phần bài viết-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right">
+        <div>
+
+            <!--Bài viết-->
+            <div class="baiviet">
+
+                <!--Thông tin xe-->
+                <div class="thongtin">
+
+                    <!--Ảnh-->
+                    <img src="~/Content/images/trangchu/muaxe-1.png" alt="" />
+
+                    <!--Tóm tắt thông tin-->
+                    <div class="text">
+                        <p class="ten">Kia - Morning X2</p>
+                        <p class="info">Hãng: <span>Kia</span></p>
+                        <p class="info">Màu xe: <span>Trắng</span></p>
+                        <p class="info">Tình trạng: <span>Đã qua sử dụng</span></p>
+                        <p class="info">Hộp số: <span>Số sàn</span></p>
+                        <p class="lienhe"><span>Quý khách muốn mua xin vui lòng liên hệ: </span>091 448 6666 - 098 555 3688</p>
+                    </div>
+                </div>
+
+                <!--Bài viết chi tiết-->
+                <div class="chitiet">
+                    <p>
+                        Doanh nghiệp tư nhân Minh Hải hân hạnh giới thiệu Kia Morning 2016 với chương trình khuyến mãi đặc biệt hấp dẫn trong tháng 12: <br />
+                        * Tặng thảm trải sàn theo xe. <br />
+                        * Túi cứu hộ, dán kính Lummar bảo hành 5 năm. <br />
+                        * Tặng cánh hướng gió.<br />
+                        *** Hỗ trợ đặc biệt.<br />
+                        * Hỗ trợ các thủ tục đăng ký, đăng kiểm, thủ tục vay vốn Ngân Hàng (lãi suất từ 6%/năm, vay 90% giá trị xe, vay 7 năm).<br />
+                        * Thời hạn bảo hành xe 03 năm.<br />
+                        * Doanh nghiệp tư nhân Minh Hải  chuyên cung cấp các dòng xe Kia: Morning, Rio, Cerato, Carens, Rondo, New Sorento, Grand Sedona, Optima….<br />
+                        Vui lòng liên hệ 091 448 6666 - 098 555 3688 (Mr. Đoàn Phước Hải) để được tư vấn và hỗ trợ mua xe với giá cùng dịch vụ tốt nhất.<br />
+                        Trân trọng!
+                    </p>
+                </div>
+
+                <!--Một số xe khác-->
+                <div class="spkhac">
+
+                    <!--Tiêu đề-->
+                    <p class="tieude">Một số xe khác</p>
+
+                    <!--Xe-->
+                    <a href="@Url.Action("Chitietmuaxe","Home")" class="sanpham">
+                        <img src="~/Content/images/trangchu/muaxe-1.png" alt="" class="img-responsive" />
+                        <p>Kia - Morning X5</p>
+                    </a>
+
+                    <!--Xe-->
+                    <a href="@Url.Action("Chitietmuaxe","Home")" class="sanpham">
+                        <img src="~/Content/images/trangchu/muaxe-1.png" alt="" class="img-responsive" />
+                        <p>Kia - Morning X5</p>
+                    </a>
+
+                    <!--Xe-->
+                    <a href="@Url.Action("Chitietmuaxe","Home")" class="sanpham">
+                        <img src="~/Content/images/trangchu/muaxe-1.png" alt="" class="img-responsive" />
+                        <p>Kia - Morning X5</p>
+                    </a>
+
+                    <!--Xe-->
+                    <a href="@Url.Action("Chitietmuaxe","Home")" class="sanpham">
+                        <img src="~/Content/images/trangchu/muaxe-1.png" alt="" class="img-responsive" />
+                        <p>Kia - Morning X5</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--Cột bên trái-->
+    <aside class="sidebar col-xs-12 col-xs-12 col-md-3 col-lg-3 pull-left">
+
+        <!--Dịch vụ-->
+        <div class="cacdichvu">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Dịch vụ</p>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/suachua.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Sửa chữa ô tô</p>
+            </a>
+
+            <!--dịch vụ-->
+            <a href="#" class="dichvu">
+                <img src="~/Content/images/trangchu/phutung.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Phụ tùng</p>
+            </a>
+        </div>
+
+        <!--Tin tức nổi bật-->
+        <div class="tintuc">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Tin tức nổi bật</p>
+
+            <!--Các tin tức-->
+            <ul class="cactintuc">
+                <li><a href="#">Làm thế nào để kiểm tra lốp đã thực sự bơm đầy hay chưa?</a></li>
+                <li><a href="#">Thay dầu cho xe bao nhiêu lâu thì hợp lý và tiết kiệm?</a></li>
+                <li><a href="#">Bộ lọc cabin là gì và bao nhiêu lâu thì nên thay thế?</a></li>
+            </ul>
+        </div>
+    </aside>
+</section>

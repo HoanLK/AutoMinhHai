@@ -1,0 +1,157 @@
+﻿/*Trang chi tiết bài viết*/
+.chitietbaiviet {
+    width: 100%;
+    height: 1%;
+    overflow: hidden;
+    margin: 2em 0 0 0;
+    padding: 1em 1em 1em 0;
+}
+
+    /*Trang chính*/
+    .chitietbaiviet > article {
+        border: solid 1px rgba(0, 0, 0, .2);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+    }
+
+        /*Banner*/
+        .chitietbaiviet > article > .banner {
+        }
+
+            .chitietbaiviet > article > .banner > img {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+        /*Bài viết*/
+        .chitietbaiviet > article > .baiviet {
+            padding: 2em 0;
+            border-bottom: solid 1px rgba(0, 0, 0, .3);
+        }
+
+            /*Tiêu đề*/
+            .chitietbaiviet > article > .baiviet > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.5em;
+                margin: 0 0 0.5em 0;
+            }
+
+            /*Ngày đăng*/
+            .chitietbaiviet > article > .baiviet > .ngaydang {
+                font-style: italic;
+                font-size: 0.9em;
+                color: rgb(198,40,40);
+            }
+
+            /*Phần nội dung*/
+            .chitietbaiviet > article > .baiviet > .text {
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                line-height: 1.7em;
+                text-indent: 2em;
+            }
+
+                .chitietbaiviet > article > .baiviet > .text > img {
+                    margin: 1em auto;
+                }
+
+        /*Các bài viết cùng chuyên mục*/
+        .chitietbaiviet > article > .baivietkhac {
+            padding: 1em 0;
+        }
+
+            /*Tiêu đề*/
+            .chitietbaiviet > article > .baivietkhac > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+
+            /*Các bài viết*/
+            .chitietbaiviet > article > .baivietkhac > .cacbaiviet {
+                list-style: none;
+                padding: 0 0 0 1em;
+                line-height: 1.9em;
+            }
+
+                /*Từng bài viết*/
+                .chitietbaiviet > article > .baivietkhac > .cacbaiviet > li {
+                }
+
+                    .chitietbaiviet > article > .baivietkhac > .cacbaiviet > li > a {
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        font-size: 1.05em;
+                        transition: all .3s ease-in-out;
+                    }
+
+                        .chitietbaiviet > article > .baivietkhac > .cacbaiviet > li > a > i {
+                            margin: 0 0.5em 0 0;
+                            color: rgb(0, 0, 0);
+                        }
+
+                        .chitietbaiviet > article > .baivietkhac > .cacbaiviet > li > a:hover {
+                            color: rgb(198,40,40);
+                        }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Trang chi tiết bài viết*/
+    .chitietbaiviet {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Cột bên trái*/
+        .chitietbaiviet > aside {
+            margin: 5em 0 0 0;
+        }
+
+            /*Các dịch vụ*/
+            .chitietbaiviet > aside > .cacdichvu {
+                height: 1%;
+                overflow: hidden;
+                padding: 0;
+            }
+
+                .chitietbaiviet > aside > .cacdichvu > .tieude {
+                    margin: 0.5em 0;
+                }
+
+                /*Dịch vụ*/
+                .chitietbaiviet > aside > .cacdichvu > .dichvu {
+                    display: block;
+                    float: left;
+                    width: 46%;
+                    height: 1%;
+                    overflow: hidden;
+                    margin: 0 2%;
+                }
+
+                    .chitietbaiviet > aside > .cacdichvu > .dichvu > img {
+                        border: solid 1px rgba(0, 0, 0, .3);
+                    }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Trang chi tiết bài viết*/
+    .chitietbaiviet {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Cột bên trái*/
+        .chitietbaiviet > aside {
+            margin: 5em 0 0 0;
+            padding: 0;
+        }
+}

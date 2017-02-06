@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Auto Minh Hải</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/mySite.css" rel="stylesheet" />
+    <link href="~/Content/_layout.css" rel="stylesheet" />
+    <link href="~/Content/menu-mobile.css" rel="stylesheet" />
+    <link href="~/Content/trangchu.css" rel="stylesheet" />
+    <link href="~/Content/gioithieu.css" rel="stylesheet" />
+    <link href="~/Content/suachua.css" rel="stylesheet" />
+    <link href="~/Content/muabanxe.css" rel="stylesheet" />
+    <link href="~/Content/chitietmuaxe.css" rel="stylesheet" />
+    <link href="~/Content/phutung.css" rel="stylesheet" />
+    <link href="~/Content/chitietphutung.css" rel="stylesheet" />
+    <link href="~/Content/tuvan.css" rel="stylesheet" />
+    <link href="~/Content/chitietbaiviet.css" rel="stylesheet" />
+    <link href="~/Content/lienhe.css" rel="stylesheet" />
+    <link href="~/Content/sidebar.css" rel="stylesheet" />
+
+    <script src="~/Scripts/Front/modernizr.custom.js"></script>
+
+    <style>
+        .fixed {
+            position: fixed;
+            top: 0;
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body class="row">
+
+    <!--Menu-->
+    <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!--Desktop-->
+        <div class="desktop hidden-xs hidden-sm col-md-12 col-lg-12">
+
+            <!--Logo-->
+            <a href="@Url.Action("Index","Home")" class="logo col-md-3 col-lg-3"><img src="~/Content/images/logo.png" class="img-responsive" /></a>
+
+            <!--Menu-->
+            <div class="menu col-md-9 col-lg-9">
+                <ul>
+                    <li class="pull-left active"><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                    <li class="pull-left"><a href="@Url.Action("About","Home")">Giới thiệu</a></li>
+                    <li class="pull-left"><a href="@Url.Action("Suachua","Home")">Sửa chữa</a></li>
+                    <li class="pull-left"><a href="@Url.Action("Muabanxe","Home")">Mua bán xe</a></li>
+                    <li class="pull-left"><a href="@Url.Action("Phutung","Home")">Phụ tùng</a></li>
+                    <li class="pull-left"><a href="@Url.Action("Tuvan","Home")">Tư vấn</a></li>
+                    <li class="pull-left"><a href="@Url.Action("Contact","Home")">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Mobile-->
+        <div class="mobile col-xs-12 col-sm-12 hidden-md hidden-lg">
+            <nav id="dl-menu" class="dl-menuwrapper">
+                <button class="dl-trigger">Open Menu</button>
+                <div>
+                    <a href="@Url.Action("Index","Home")" class="logo"><img src="~/Content/images/logo.png" /></a>
+                    <a id="button-search" class="search"><i class="fa fa-search search-btn"></i></a>
+                </div>
+                <ul class="dl-menu">
+                    <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                    <li><a href="@Url.Action("About","Home")">Giới thiệu</a></li>
+                    <li><a href="@Url.Action("Suachua","Home")">Sửa chữa</a></li>
+                    <li><a href="@Url.Action("Muabanxe","Home")">Mua bán xe</a></li>
+                    <li><a href="@Url.Action("Phutung","Home")">Phụ tùng</a></li>
+                    <li><a href="@Url.Action("Tuvan","Home")">Tư vấn</a></li>
+                    <li><a href="@Url.Action("Contact","Home")">Liên hệ</a></li>
+                </ul>
+                <input type="text" placeholder="Nhập tìm kiếm ..." value="" id="search-box" class="search-box" />
+            </nav>
+        </div>
+    </header>
+
+    <!--Nút Back to top-->
+    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" title="Nhấn để chuyển lên đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+    @RenderBody()
+
+    <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!--Slide lo các hãng oto-->
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" loop="infiniti">
+            <a href="#"><img src="~/Content/images/logo-xe-1.png" /></a>
+            <a href="#"><img src="~/Content/images/logo-xe-2.png" /></a>
+            <a href="#"><img src="~/Content/images/logo-xe-3.png" /></a>
+            <a href="#"><img src="~/Content/images/logo-xe-4.png" /></a>
+            <a href="#"><img src="~/Content/images/logo-xe-5.png" /></a>
+        </marquee>
+
+        <!--border-->
+        <div class="border col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+
+        <!--Footer-->
+        <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!--Menu-->
+            <ul class="menu col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <li class="pull-left"><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                <li class="pull-left"><a href="@Url.Action("About","Home")">Giới thiệu</a></li>
+                <li class="pull-left"><a href="@Url.Action("Suachua","Home")">Sửa chữa</a></li>
+                <li class="pull-left"><a href="@Url.Action("Muabanxe","Home")">Mua bán xe</a></li>
+                <li class="pull-left"><a href="@Url.Action("Phutung","Home")">Phụ tùng</a></li>
+                <li class="pull-left"><a href="@Url.Action("Tuvan","Home")">Tư vấn</a></li>
+                <li class="pull-left"><a href="@Url.Action("Contact","Home")">Liên hệ</a></li>
+            </ul>
+
+            <!--Thông tin-->
+            <div class="thongtin col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <!--Thông tin công ty-->
+                <div class="info-co col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                    <!--Tiêu đề-->
+                    <p class="tieude">Doanh nghiệp tư nhân minh hải</p>
+
+                    <!--nội dung-->
+                    <div class="noidung">
+                        <p><i class="fa fa-map-marker"></i>Số 337 - Hùng Vương, Hồng Bàng, Hải Phòng</p>
+                        <p><i class="fa fa-phone"></i>091 448 6666 - 098 555 3688 - 0313 540 888</p>
+                        <p><i class="fa fa-fax"></i>0313 540 555</p>
+                        <p><i class="fa fa-envelope"></i>0914486666.qn@gmail.com</p>
+                    </div>
+                </div>
+
+                <!--Giới thiệu-->
+                <div class="gioithieu col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                    <!--Tiêu đề-->
+                    <p class="tieude">Giới thiệu về chúng tôi</p>
+
+                    <!--Nội dung-->
+                    <p class="noidung">
+                        Doanh nghiệp tư nhân Minh Hải được thành lập vào ngày 17 / 9 / 2002.
+                        Với hơn 14 năm trong nghề chúng tôi đã tạo dựng lên được một thương hiệu vững chắc đối với khách hàng đã và đang sử dụng dịch vụ của chúng tôi.
+                        Chúng tôi sở hữu một garage rộng lớn cùng đội ngũ kỹ thuật chuyên môn cáo, chắc chắn sẽ làm hài lòng quý khách...
+                        <a href="@Url.Action("About","Home")">Xem thêm</a>
+                    </p>
+                </div>
+
+                <!--Map-->
+                <div class="map col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p class="tieude">Tìm chúng tôi trên bản đồ</p>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.2263420435743!2d106.65901461493674!3d20.862925286088554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a43a5d22e2d%3A0xb7848d2af9028a21!2zMzM3IEjDuW5nIFbGsMahbmcsIFRoxrDhu6NuZyBMw70sIEjhu5NuZyBCw6BuZywgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1483694380460" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/Front/jquery.dlmenu.js"></script>
+    <script src="~/Scripts/Front/myScripts.js"></script>
+
+    <script>
+        $(function () {
+
+            $(window).bind('scroll', function () {
+                var navHeight = $('.mobile').height();
+                if ($(window).scrollTop() > navHeight) {
+                    $('#dl-menu').addClass('fixed');
+                }
+                else {
+                    $('#dl-menu').removeClass('fixed');
+                }
+            });
+
+            $('#dl-menu').dlmenu({
+                animationClasses: { classin: 'dl-animate-in-5', classout: 'dl-animate-out-5' }
+            });
+        });
+    </script>
+</body>
+</html>
