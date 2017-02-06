@@ -1,0 +1,248 @@
+﻿@{
+    ViewBag.Title = "Auto Minh Hải";
+}
+
+<section class="trangchu">
+
+    <!--Banner-->
+    <div class="banner hidden-xs hidden-sm">
+        <p class="ten-co">Doanh nghiệp tư nhân minh hải</p>
+        <div>
+            <p class="tieude">Chuyên:</p>
+            <p class="noidung">
+                - Sửa chữa ô tô các loại <br />
+                - Mua bán các loại xe hơi <br />
+                - Cung cấp phụ tùng xe hơi
+            </p>
+            <div class="phone">
+                <i class="fa fa-phone"></i>
+                <p>
+                    091 448 6666 <br />
+                    098 555 3688
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Tìm kiếm xe-->
+    <article class="timxe" ng-controller="searchController">
+
+        <!--Tiêu đề-->
+        <div class="tieude pull-left">
+
+            <!--Giới thiệu-->
+            <div class="text">
+                <p class="tieude">Bạn muốn mua xe?</p>
+                <p class="noidung">Chúng tôi luôn có đầy đủ các dòng xe, hãng xe mà có thể bạn quan tâm và đang tìm kiếm.</p>
+            </div>
+
+            <!--Hình go-->
+            <div class="draw">
+                <div class="go">
+                    <p>Go</p>
+                </div>
+                <div class="ve"></div>
+            </div>
+        </div>
+
+        <!--Lựa chọn dòng xe-->
+        <div class="luachon pull-left">
+
+            <!--Số thứ tự bước-->
+            <div class="step">
+                <p>1</p>
+            </div>
+
+            <!--Form chọn dòng xe-->
+            <form>
+                <label>Tìm kiếm thông tin xe</label>
+                <input type="text" placeholder="Nhập thông tin cần tìm..." value="" class="form-control" ng-keypress="($event.which === 13)?search():0" ng-model="searchText"/>
+            </form>
+        </div>
+
+        <!--Nút tìm kiếm-->
+        <div class="timkiem pull-left">
+
+            <!--Số thứ tự bước-->
+            <div class="step">
+                <p>2</p>
+            </div>
+
+            <!--Nút-->
+            <button ng-click="search()">Tìm kiếm</button>
+        </div>
+    </article>
+
+    <!--Các dịch vụ-->
+    <article class="cacdichvu">
+
+        <!--Từng dịch vụ-->
+        <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="~/Content/front/images/trangchu/gioithieu.png" alt="" class="img-responsive" />
+
+            <!--Thông tim-->
+            <div class="text">
+
+                <!--Tiêu đề-->
+                <p class="tieude">Giới thiệu</p>
+
+                <!--Nội dung-->
+                <p class="noidung">Chúng tôi có một garage rộng lớn có thể chứa được tới hàng chục chiếc xe.</p>
+            </div>
+
+            <!--Nút xem thêm-->
+            <a href="/gioi-thieu" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+        </div>
+
+        <!--Từng dịch vụ-->
+        <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="~/Content/front/images/trangchu/suachua.png" alt="" class="img-responsive" />
+
+            <!--Thông tim-->
+            <div class="text">
+
+                <!--Tiêu đề-->
+                <p class="tieude">Sửa chữa</p>
+
+                <!--Nội dung-->
+                <p class="noidung">Với kỹ năng cùng chuyên môn cao, chúng tôi có thể sửa chữa lại chiếc xe của bạn như ban đầu.</p>
+            </div>
+
+            <!--Nút xem thêm-->
+            <a href="/sua-chua" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+        </div>
+
+        <!--Từng dịch vụ-->
+        <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="~/Content/front/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+
+            <!--Thông tim-->
+            <div class="text">
+
+                <!--Tiêu đề-->
+                <p class="tieude">Mua bán xe</p>
+
+                <!--Nội dung-->
+                <p class="noidung">Nếu bạn cần sở hữu những chiếc xe đã qua sử dụng thì chúng tôi là sự lựa chọn hoàn hảo.</p>
+            </div>
+
+            <!--Nút xem thêm-->
+            <a href="/danh-muc-san-pham/mua-ban-xe-2" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+        </div>
+
+        <!--Từng dịch vụ-->
+        <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <img src="~/Content/front/images/trangchu/phutung.png" alt="" class="img-responsive" />
+
+            <!--Thông tim-->
+            <div class="text">
+
+                <!--Tiêu đề-->
+                <p class="tieude">Phụ tùng thay thế</p>
+
+                <!--Nội dung-->
+                <p class="noidung">Chúng tôi cung cấp tất cả các loại phụ tùng thay thế của các dòng xe từ thấp tới cao.</p>
+            </div>
+
+            <!--Nút xem thêm-->
+            <a href="/danh-muc-san-pham/phu-tung-3" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+        </div>
+    </article>
+
+    <!--Tại sao nên chọn chúng tôi-->
+    <article class="taisao">
+        <img src="~/Content/front/images/trangchu/taisao.png" alt="" class="img-responsive col-xs-12 col-sm-12 col-md-6 col-lg-7" />
+
+        <!--Phần chữ-->
+        <div class="text col-xs-12 col-sm-12 col-md-6 col-lg-5">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Tại sao nên chọn chúng tôi?</p>
+
+            <!--Nội dung-->
+            <p class="noidung">
+                Việc lựa chọn một cơ sở sửa chữa xe là một điều khá quan trọng.
+                Không phải cứ đến bất cứ một cơ sở sửa chữa ô tô nào là bạn cũng có thể được phục vụ một cách chu đáo và chuyên nghiệp.
+                Chúng tôi với phương châm “ Nụ cười của quý khách là thành công của chúng tôi” chắc chắn sẽ đem lại cho bạn sự hài lòng tuyệt đối.
+            </p>
+
+            <!--Lý do-->
+            <div class="lydo">
+                <p class="stt">1</p>
+                <p class="text">Uy tín - Nhiệt tình</p>
+            </div>
+
+            <!--Lý do-->
+            <div class="lydo">
+                <p class="stt">2</p>
+                <p class="text">Tận tâm - trách nhiệm</p>
+            </div>
+
+            <!--Lý do-->
+            <div class="lydo">
+                <p class="stt">3</p>
+                <p class="text">Chu đáo - hiệu quả</p>
+            </div>
+        </div>
+    </article>
+
+    <!--Góc tư vấn - Mua bán xe cũ-->
+    <article class="tuvan-muaban">
+
+        <!--Góc tư vấn-->
+        <div class="tuvan col-xs-12 col-sm-12 col-md-8 col-lg-8" ng-controller="postHotHomeController">
+
+            <!--Tiêu đề-->
+            <div class="tieude">
+                <div class="text">
+                    <p>Góc tư vấn</p>
+                </div>
+                <div class="ve"></div>
+            </div>
+
+            <!--Các bài viết-->
+            <div class="cacbaiviet">
+
+                <!--Bài viết-->
+                <div class="baiviet col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left" ng-repeat="(index, value) in tinNoiBats">
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
+
+                    <!--Tên bài viết-->
+                    <div class="tieude">
+                        <p>{{value.title}}</p>
+                        <div class="xemthem">
+                            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Mua bán xe cũ-->
+        <div class="muaban col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-controller="productHomeController">
+
+            <!--Tiêu đề-->
+            <div class="tieude">
+                <p>Mua bán xe ô tô cũ</p>
+            </div>
+
+            <!--Các sản phẩm-->
+            <div class="cacsanpham">
+
+                <!--Sản phẩm-->
+                <div class="sanpham pull-left" ng-repeat="(index, value) in spNoiBats">
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
+
+                    <!--Thông tin xe-->
+                    <div class="thongtin">
+                        <p class="tenxe">{{value.title}}</p>
+                        <p class="text">Năm sản xuất: {{value.namSX}}</p>
+                        <p class="text">Tình trạng: {{value.tinhTrang}}</p>
+                        <p class="gia">Giá: {{value.price | number:0}} vnđ</p>
+                        <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

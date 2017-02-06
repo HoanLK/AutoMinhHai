@@ -1,0 +1,44 @@
+﻿@model CMS.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="chitietbaiviet">
+
+    <!--Phần chinh-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right" ng-controller="postController">
+        <input type="hidden" value="@Model.idPost" id="idPost" />
+        <!--Banner-->
+        <div class="banner">
+            <img src="~/Content/Front/images/tuvan/banner.png" alt="" class="img-responsive" />
+        </div>
+
+        <!--Các bài viết-->
+        <div class="baiviet col-xs-12 col-msm12 col-md-12 col-lg-12">
+            <span us-spinner="{radius:15, width:4, length: 8}"></span>
+            <!--Tiêu đề-->
+            <p class="tieude">{{post.title}}</p>
+
+            <!--Ngày đăng-->
+            <p class="ngaydang">Ngày đăng: {{post.timeModified | date:'dd-MM-yyyy HH:mm:ss Z'}}</p>
+
+            <!--Nội dung bài viết-->
+            <div class="text" ng-bind-html="post.content"></div>
+        </div>
+
+        <!--Bài viết cùng chuyên mục-->
+        <div class="baivietkhac">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Bài viết cùng chuyên mục</p>
+            <p ng-show="relatedPosts.lenght > 0" style="font-size: 1.5em; color: #f44336; padding: 3em;">Không có bài viết cùng chuyên mục</p>
+            <!--Các bài viét-->
+            <ul class="cacbaiviet">
+                <li dir-paginate="(index, value) in relatedPosts | itemsPerPage:6" ng-hide="relatedPosts.lenght > 0"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}"><i class="fa fa-angle-double-right"></i>{{value.title}}</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <!--Cột bên trái-->
+    @Html.Partial("_MenuLeft")
+</section>

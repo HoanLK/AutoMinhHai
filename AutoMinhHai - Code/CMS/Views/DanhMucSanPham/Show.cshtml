@@ -1,0 +1,41 @@
+﻿@model CMS.Models.CategoryProduct
+@{
+    ViewBag.Title = ViewBag.title;
+}
+
+<section class="muabanxe">
+
+    <!--Trang chính-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right" ng-controller="categoryProductController">
+        <input type="hidden" value="@Model.idCategory" id="idCategoryProduct" />
+        <!--Banner-->
+        <div class="banner">
+            <img src="@Model.image" alt="" class="img-responsive" />
+        </div>
+
+        <!--Các sản phẩm-->
+        <div class="cacsanpham" >
+            <span us-spinner="{radius:15, width:4, length: 8}"></span>
+            <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-hide="products.length > 0" style="color: #F44336; font-size: 2em; padding-left: 3em;">@Model.title:<br /> Chưa có sản phẩm</p>
+            <!--Sản phẩm-->
+            <div class="sanpham sp-1" dir-paginate="(index, value) in products | itemsPerPage:6" ng-show="products.length > 0">
+                <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
+
+                <!--Thông tin xe-->
+                <div class="thongtin">
+                    <p class="ten">{{value.title}}</p>
+                    <p class="text">Năm sản xuất: {{value.namSX}}</p>
+                    <p class="text">Tình trạng: {{value.tinhTrang}}</p>
+                    <p class="gia">Giá: {{value.price | number:0}} vnđ</p>
+                    <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Số trang-->
+        <dir-pagination-controls></dir-pagination-controls>
+    </article>
+
+    <!--Cột bên trái-->
+    @Html.Partial("_MenuLeft")
+</section>

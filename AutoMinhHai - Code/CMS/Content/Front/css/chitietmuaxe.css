@@ -1,0 +1,290 @@
+﻿.chitietmuaxe {
+    width: 100%;
+    height: 1%;
+    overflow: hidden;
+    margin: 3em 0;
+}
+
+    /*Cột bên trái*/
+    .chitietmuaxe > aside {
+    }
+
+        /*Các dịch vụ*/
+        .chitietmuaxe > aside > .cacdichvu {
+            border: solid 1px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+            padding: 1em;
+        }
+
+            .chitietmuaxe > aside > .cacdichvu > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                font-size: 2em;
+                margin: 0 0 1em 0;
+            }
+
+            /*Dịch vụ*/
+            .chitietmuaxe > aside > .cacdichvu > .dichvu {
+                text-align: center;
+                text-decoration: none;
+            }
+
+                .chitietmuaxe > aside > .cacdichvu > .dichvu > img {
+                    margin: 0 auto;
+                    padding: 0;
+                    width: 100%;
+                }
+
+                .chitietmuaxe > aside > .cacdichvu > .dichvu > p {
+                    margin: 0.5em 0 2em 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    color: rgb(0, 0, 0);
+                    transition: all .3s ease-in-out;
+                }
+
+                .chitietmuaxe > aside > .cacdichvu > .dichvu:hover > p {
+                    color: rgb(198,40,40);
+                }
+
+        /*Các tin tưc*/
+        .chitietmuaxe > aside > .tintuc {
+            margin: 3em 0 0 0;
+            border: solid 1px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+            padding: 1em;
+        }
+
+            .chitietmuaxe > aside > .tintuc > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                font-size: 2em;
+            }
+
+            /*Danh sách tin tức*/
+            .chitietmuaxe > aside > .tintuc > .cactintuc {
+                padding: 0 2em;
+            }
+
+                /*Tin tức*/
+                .chitietmuaxe > aside > .tintuc > .cactintuc > li {
+                    line-height: 1.7em;
+                    text-align: justify;
+                    margin: 0 0 1em 0;
+                }
+
+                    .chitietmuaxe > aside > .tintuc > .cactintuc > li > a {
+                        color: rgb(0, 0, 0);
+                    }
+
+    /*Phần chính*/
+    .chitietmuaxe > article {
+        padding: 0 1em 1em 1em;
+    }
+
+        .chitietmuaxe > article > div {
+            border: solid 1px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+            height: 1%;
+            overflow: hidden;
+            padding: 0 0 1em 0;
+        }
+
+            /*Banner*/
+            .chitietmuaxe > article > div > .banner {
+            }
+
+                .chitietmuaxe > article > div > .banner > img {
+                    width: 100%;
+                }
+
+            /*Bài viết*/
+            .chitietmuaxe > article > div > .baiviet {
+                margin: 2em 0 0 0;
+                padding: 0 1em;
+            }
+
+                /*Thông tin cơ bản về xe*/
+                .chitietmuaxe > article > div > .baiviet > .thongtin {
+                    height: 1%;
+                    overflow: hidden;
+                }
+
+                    /*Ảnh xe*/
+                    .chitietmuaxe > article > div > .baiviet > .thongtin > img {
+                        width: 40%;
+                        height: 15em;
+                        float: left;
+                    }
+
+                    /*Thông tin xe*/
+                    .chitietmuaxe > article > div > .baiviet > .thongtin > .text {
+                        float: left;
+                        padding: 1em;
+                        width: 60%;
+                        letter-spacing: 1px;
+                    }
+
+                        .chitietmuaxe > article > div > .baiviet > .thongtin > .text > .ten {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 1.5em;
+                        }
+
+                        .chitietmuaxe > article > div > .baiviet > .thongtin > .text > .info {
+                            padding: 0 1em;
+                            font-weight: bold;
+                            font-size: 1.1em;
+                            letter-spacing: 1px;
+                        }
+
+                            .chitietmuaxe > article > div > .baiviet > .thongtin > .text > .info > span {
+                                font-weight: initial;
+                                color: rgb(244,67,54);
+                            }
+
+                        .chitietmuaxe > article > div > .baiviet > .thongtin > .text > .lienhe {
+                            color: rgb(244,67,54);
+                        }
+
+                            .chitietmuaxe > article > div > .baiviet > .thongtin > .text > .lienhe > span {
+                                color: rgb(0, 0, 0);
+                            }
+
+                /*Bài viết về xe*/
+                .chitietmuaxe > article > div > .baiviet > .chitiet {
+                    padding: 1em 0;
+                    border-bottom: solid 1px rgba(0, 0, 0, .3);
+                }
+
+                    .chitietmuaxe > article > div > .baiviet > .chitiet > p {
+                        font-size: 1.2em;
+                        text-align: justify;
+                        letter-spacing: 1px;
+                    }
+
+                /*Các sản phẩm khác*/
+                .chitietmuaxe > article > div > .baiviet > .spkhac {
+                    margin: 2em 0 0 0;
+                }
+
+                    .chitietmuaxe > article > div > .baiviet > .spkhac > .tieude {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 1.5em;
+                        padding: 0 0 0 1%;
+                    }
+
+                    /*Sản phẩm*/
+                    .chitietmuaxe > article > div > .baiviet > .spkhac > .sanpham {
+                        text-decoration: none;
+                        width: 23%;
+                        float: left;
+                        margin: 0 1%;
+                    }
+
+                        .chitietmuaxe > article > div > .baiviet > .spkhac > .sanpham > img {
+                            width: 100%;
+                        }
+
+                        .chitietmuaxe > article > div > .baiviet > .spkhac > .sanpham > p {
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: rgb(0,0,0);
+                            padding: 0.5em 0 0 0;
+                            transition: all .3s ease-in-out;
+                        }
+
+                        .chitietmuaxe > article > div > .baiviet > .spkhac > .sanpham:hover > p {
+                            color: rgb(198,40,40);
+                        }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Phần chính*/
+    .chitietmuaxe > article {
+        padding: 0;
+    }
+
+        /*Thông tin xe*/
+        .chitietmuaxe > article > div > .baiviet > .thongtin > .text {
+            padding: 0 1em;
+        }
+
+    /*Cột bên trái*/
+    .chitietmuaxe > aside {
+        margin: 5em 0 0 0;
+    }
+
+        /*Các dịch vụ*/
+        .chitietmuaxe > aside > .cacdichvu {
+            height: 1%;
+            overflow: hidden;
+            padding: 0;
+        }
+
+            .chitietmuaxe > aside > .cacdichvu > .tieude {
+                margin: 0.5em 0;
+            }
+
+            /*Dịch vụ*/
+            .chitietmuaxe > aside > .cacdichvu > .dichvu {
+                display: block;
+                float: left;
+                width: 46%;
+                height: 1%;
+                overflow: hidden;
+                margin: 0 2%;
+            }
+
+                .chitietmuaxe > aside > .cacdichvu > .dichvu > img {
+                    border: solid 1px rgba(0, 0, 0, .3);
+                }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Phần chính*/
+    .chitietmuaxe > article {
+        padding: 0;
+    }
+
+        /*Bài viết*/
+        .chitietmuaxe > article > div > .baiviet {
+            padding: 0 1em;
+        }
+
+            /*Ảnh xe*/
+            .chitietmuaxe > article > div > .baiviet > .thongtin > img {
+                width: 100%;
+            }
+
+            /*Thông tin xe*/
+            .chitietmuaxe > article > div > .baiviet > .thongtin > .text {
+                padding: 1em 0;
+                width: 100%;
+                border-bottom: solid 1px rgba(0, 0, 0, .3);
+            }
+
+            /*Sản phẩm*/
+            .chitietmuaxe > article > div > .baiviet > .spkhac > .sanpham {
+                width: 100%;
+                margin: 0.6em 1%;
+            }
+
+                .chitietmuaxe > article > div > .baiviet > .spkhac > .sanpham > p {
+                    font-size: 1.5em;
+                }
+}

@@ -1,0 +1,106 @@
+﻿@model CMS.Models.Product
+@{
+    ViewBag.Title = @Model.title;
+}
+
+<section class="chitietmuaxe chitietphutung" >
+    <!--Phần bài viết-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right" ng-controller="productController">
+        <input type="hidden" value="@Model.idProduct" id="idProduct" />
+        <div>
+            <!--Banner-->
+            <div class="banner">
+                <img src="~/Content/Front/images/muabanxe/banner.png" alt="" class="img-responsive" />
+            </div>
+
+            <!--Bài viết-->
+            <div class="baiviet">
+
+                <!--Thông tin xe-->
+                <div class="thongtin">
+                    <span us-spinner="{radius:15, width:4, length: 8}"></span>
+                    <!--Ảnh-->
+                    <img ng-src="{{product.image}}" alt="{{product.title}}" />
+
+                    <!--Tóm tắt thông tin-->
+                    <div class="text">
+                        <p class="ten">{{product.title}}</p>
+                        <p class="info">Hãng: <span>{{product.hang}}</span></p>
+                        <p class="info">Màu xe: <span>{{product.mau}}</span></p>
+                        <p class="info">Tình trạng: <span>{{product.tinhTrang}}</span></p>
+                        <p class="info">Hộp số: <span>{{product.hopSo}}</span></p>
+                        <p class="info">Mô tả: <span>{{product.description}}</span></p>
+                        <p class="lienhe"><span>Quý khách muốn mua xin vui lòng liên hệ: </span>091 448 6666 - 098 555 3688</p>
+                    </div>
+                </div>
+
+                <!--Bài viết chi tiết-->
+                <div class="chitiet" ng-bind-html="product.content"></div>
+
+                <!--Một số xe khác-->
+                <div class="spkhac">
+
+                    <!--Tiêu đề-->
+                    <p class="tieude">Một số xe khác</p>
+                    <span us-spinner="{radius:15, width:4, length: 8}"></span>
+                    <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-hide="products.length > 0" style="color: #F44336; font-size: 2em; padding-left: 3em;">Chưa có sản phẩm</p>
+                    <!--Xe-->
+                    <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" class="sanpham" dir-paginate="(index, value) in products | itemsPerPage:4" ng-hide="products.length > 0">
+                        <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
+                        <p>{{value.title}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--Cột bên trái-->
+    @Html.Partial("_MenuLeft")
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 chiTietSP" ng-controller="productController">
+    <input type="hidden" value="@Model.idProduct" id="idProduct" />
+    <input type="hidden" value="1" id="idCategoryProduct" />
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 chiTiet">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 left pull-left">
+            <img ng-src="{{product.image}}" class="img-responsive" alt="{{product.title}}" />
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 right pull-right">
+            <p class="tieuDe">{{product.title}}</p>
+            <p class="gia" ng-show="product.price.length > 0"><span>Đơn giá: </span>{{product.price}}</p>
+            <p class="gia" ng-hide="product.price.length > 0">Liên hệ</p>
+            <button class="btnDatHang" data-toggle="modal" data-target="#datHang">Đặt hàng</button>
+            <div class="chucNang" ng-bind-html="product.description"></div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 noiDung" ng-bind-html="product.content"></div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 spCungLoai">
+        <p class="tieuDe">SẢN PHẨM CÙNG LOẠI</p>
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item" dir-paginate="(index, value) in products | itemsPerPage:3">
+            <img ng-src="{{value.image}}" class="img-responsive" />
+            <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" class="tieuDe">{{value.title}}</a>
+        </div>
+    </div>
+</div>*@

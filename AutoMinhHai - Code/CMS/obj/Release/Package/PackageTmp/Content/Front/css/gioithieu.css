@@ -1,0 +1,284 @@
+﻿/*Trang giới thiệu*/
+.gioithieu {
+    height: 1%;
+    overflow: hidden;
+    padding: 3em 0 0 0;
+}
+
+    /*Cột bên trái*/
+    .gioithieu > aside {
+    }
+
+        /*Các dịch vụ*/
+        .gioithieu > aside > .cacdichvu {
+            border: solid 1px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+            padding: 1em;
+        }
+
+            .gioithieu > aside > .cacdichvu > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                font-size: 2em;
+                margin: 0 0 1em 0;
+            }
+
+            /*Dịch vụ*/
+            .gioithieu > aside > .cacdichvu > .dichvu {
+                text-align: center;
+                text-decoration: none;
+            }
+
+                .gioithieu > aside > .cacdichvu > .dichvu > img {
+                    margin: 0 auto;
+                    padding: 0;
+                    width: 100%;
+                }
+
+                .gioithieu > aside > .cacdichvu > .dichvu > p {
+                    margin: 0.5em 0 2em 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    color: rgb(0, 0, 0);
+                    transition: all .3s ease-in-out;
+                }
+
+                .gioithieu > aside > .cacdichvu > .dichvu:hover > p {
+                    color: rgb(198,40,40);
+                }
+
+        /*Các tin tưc*/
+        .gioithieu > aside > .tintuc {
+            margin: 3em 0 0 0;
+            border: solid 1px rgba(0, 0, 0, .2);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+            padding: 1em;
+        }
+
+            .gioithieu > aside > .tintuc > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                font-size: 2em;
+            }
+
+            /*Danh sách tin tức*/
+            .gioithieu > aside > .tintuc > .cactintuc {
+                padding: 0 2em;
+            }
+
+                /*Tin tức*/
+                .gioithieu > aside > .tintuc > .cactintuc > li {
+                    line-height: 1.7em;
+                    text-align: justify;
+                    margin: 0 0 1em 0;
+                }
+
+                    .gioithieu > aside > .tintuc > .cactintuc > li > a {
+                        color: rgb(0, 0, 0);
+                    }
+
+    /*Bài viết*/
+    .gioithieu > article {
+        padding: 1em;
+    }
+
+        .gioithieu > article > .tieude {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        /*Từng khung*/
+        .gioithieu > article > .line {
+            height: 1%;
+            overflow: hidden;
+            padding: 1em 0;
+        }
+
+            /*Phần chữ*/
+            .gioithieu > article > .line > .text {
+                width: 60%;
+                text-align: justify;
+                font-size: 1.2em;
+                line-height: 1.65em;
+                letter-spacing: 1px;
+            }
+
+            .gioithieu > article > .line > .text-1 {
+                float: left;
+                padding: 0 2em 0 0;
+            }
+
+            .gioithieu > article > .line > .text-2 {
+                float: right;
+                padding: 0 0 0 2em;
+            }
+
+            .gioithieu > article > .line > .text-3 {
+                float: left;
+                padding: 0 2em 0 0;
+            }
+
+            .gioithieu > article > .line > .text > .tieude {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+
+            .gioithieu > article > .line > .text > .noidung {
+            }
+
+                .gioithieu > article > .line > .text > .noidung > p {
+                }
+
+                    .gioithieu > article > .line > .text > .noidung > p > i {
+                        width: 2em;
+                    }
+
+            /*Phần ảnh*/
+            .gioithieu > article > .line > img {
+                width: 40%;
+            }
+
+            .gioithieu > article > .line > .img-1 {
+                float: right;
+            }
+
+            .gioithieu > article > .line > .img-2 {
+                float: left;
+            }
+
+            .gioithieu > article > .line > .img-3 {
+                float: right;
+            }
+
+        /*Khung cuối*/
+        .gioithieu > article > .end {
+            padding: 2em 0;
+        }
+
+            .gioithieu > article > .end > p {
+                text-transform: uppercase;
+                text-align: center;
+                color: rgb(198,40,40);
+                font-size: 1.5em;
+                margin: 0 0 2em 0;
+            }
+
+            .gioithieu > article > .end > img {
+                margin: 0 auto;
+            }
+
+/*Giao diện cho màn hình lớn*/
+@media (min-width: 1400px) {
+}
+
+/*Giao diện cho tablet (ngang)*/
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+/*Giao diện cho tablet (dọc)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*Bài viết*/
+    .gioithieu > article {
+        padding: 0 1em;
+    }
+
+        .gioithieu > article > .line > .text-1 {
+            text-align: left;
+        }
+
+        .gioithieu > article > .line > .text-2 {
+            width: 60%;
+            padding: 0 0 0 1em;
+        }
+
+        .gioithieu > article > .line > .text > .tieude {
+            font-size: 1.25em;
+        }
+
+        .gioithieu > article > .line > .text > .noidung > p > i {
+            width: 1.5em;
+            font-size: 1.3em;
+        }
+
+    /*Cột bên trái*/
+    .gioithieu > aside {
+        margin: 5em 0 0 0;
+    }
+
+        /*Các dịch vụ*/
+        .gioithieu > aside > .cacdichvu {
+            height: 1%;
+            overflow: hidden;
+            padding: 0;
+        }
+
+            .gioithieu > aside > .cacdichvu > .tieude {
+                margin: 0.5em 0;
+            }
+
+            /*Dịch vụ*/
+            .gioithieu > aside > .cacdichvu > .dichvu {
+                display: block;
+                float: left;
+                width: 32%;
+                height: 1%;
+                overflow: hidden;
+                margin: 0 0.5%;
+            }
+
+                .gioithieu > aside > .cacdichvu > .dichvu > img {
+                    border: solid 1px rgba(0, 0, 0, .3);
+                }
+}
+
+/*Giao diện cho điện thoại*/
+@media (max-width: 767px) {
+    /*Bài viết*/
+    .gioithieu > article {
+        padding: 0 1em;
+    }
+
+        /*Từng khung*/
+        .gioithieu > article > .line {
+            padding: 1em 0;
+        }
+
+            /*Phần chữ*/
+            .gioithieu > article > .line > .text {
+                width: 100%;
+            }
+
+            .gioithieu > article > .line > .text-1 {
+                padding: 0;
+                text-align: left;
+            }
+
+            .gioithieu > article > .line > .text-2 {
+                padding: 0;
+            }
+
+            .gioithieu > article > .line > .text-3 {
+                padding: 0;
+            }
+
+            .gioithieu > article > .line > .text > .tieude {
+                font-size: 1.3em;
+                text-align: center;
+            }
+
+            .gioithieu > article > .line > .text > .noidung > p > i {
+                width: 1.5em;
+                font-size: 1.4em;
+            }
+
+            /*Phần ảnh*/
+            .gioithieu > article > .line > img {
+                width: 100%;
+            }
+}

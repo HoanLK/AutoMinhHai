@@ -1,0 +1,37 @@
+﻿<aside class="col-xs-12 col-sm-12 col-md-3 col-lg-3 pull-left" ng-controller="postHotController">
+
+        <!--Dịch vụ-->
+        <div class="cacdichvu">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Dịch vụ</p>
+
+            <!--dịch vụ-->
+            <a href="/danh-muc-san-pham/mua-ban-xe-2" class="dichvu">
+                <img src="~/Content/Front/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Mua bán xe</p>
+            </a>
+
+            <!--dịch vụ-->
+            <a href="/danh-muc-san-pham/phu-tung-3" class="dichvu">
+                <img src="~/Content/Front/images/trangchu/phutung.png" alt="" class="img-responsive" />
+
+                <!--Tên dịch vụ-->
+                <p>Phụ tùng</p>
+            </a>
+        </div>
+
+        <!--Tin tức nổi bật-->
+        <div class="tintuc">
+
+            <!--Tiêu đề-->
+            <p class="tieude">Tin tức nổi bật</p>
+            <span us-spinner="{radius:15, width:4, length: 8}"></span>
+            <!--Các tin tức-->
+            <ul class="cactintuc">
+                <li ng-repeat="(index, value) in tinNoiBats"><a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+            </ul>
+        </div>
+    </aside>

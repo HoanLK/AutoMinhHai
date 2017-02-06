@@ -1,0 +1,41 @@
+﻿@model CMS.Models.Category
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="tuvan">
+
+    <!--Phần chinh-->
+    <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right" ng-controller="categoryPostController">
+        <input type="hidden" value="@Model.idCategory" id="idCategory" />
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <!--Banner-->
+        <div class="banner">
+            <img src="~/Content/Front/images/tuvan/banner.png" alt="" class="img-responsive" />
+        </div>
+
+        <!--Các bài viết-->
+        <div class="cacbaiviet col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <!--Bài viết-->
+            <div class="baiviet bv-1 col-xs-12 col-sm-6 col-md-6 col-lg-6" dir-paginate="(index, value) in posts | itemsPerPage:6">
+                <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
+
+                <!--Tên bài viết-->
+                <div class="tieude">
+                    <p>{{value.title}}</p>
+                    <div class="xemthem">
+                        <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Số trang-->
+        <dir-pagination-controls></dir-pagination-controls>
+    </article>
+
+    <!--Cột bên trái-->
+    @Html.Partial("_MenuLeft")
+
+</section>
