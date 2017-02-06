@@ -120,25 +120,44 @@
 
         <!--Dịch vụ-->
         <div class="cacdichvu">
-
+            @{
+                string[] url = Request.Url.ToString().Split('/');
+            }
             <!--Tiêu đề-->
             <p class="tieude">Dịch vụ</p>
 
-            <!--dịch vụ-->
-            <a href="#" class="dichvu">
-                <img src="~/Content/images/trangchu/suachua.png" alt="" class="img-responsive" />
+            @if (url[url.Count() - 1] != "Phutung")
+            {
+                <!--dịch vụ-->
+                <a href="#" class="dichvu">
+                    <img src="~/Content/images/trangchu/suachua.png" alt="" class="img-responsive" />
 
-                <!--Tên dịch vụ-->
-                <p>Sửa chữa ô tô</p>
-            </a>
+                    <!--Tên dịch vụ-->
+                    <p>Phụ tùng</p>
+                </a>
+            }
 
-            <!--dịch vụ-->
-            <a href="#" class="dichvu">
-                <img src="~/Content/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+            @if (url[url.Count() - 1] != "Suachua")
+            {
+                <!--dịch vụ-->
+                <a href="#" class="dichvu">
+                    <img src="~/Content/images/trangchu/suachua.png" alt="" class="img-responsive" />
 
-                <!--Tên dịch vụ-->
-                <p>Mua bán xe</p>
-            </a>
+                    <!--Tên dịch vụ-->
+                    <p>Sửa chữa ô tô</p>
+                </a>
+            }
+
+            @if (url[url.Count() - 1] != "Muabanxe")
+            {
+                <!--dịch vụ-->
+                <a href="#" class="dichvu">
+                    <img src="~/Content/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+
+                    <!--Tên dịch vụ-->
+                    <p>Mua bán xe</p>
+                </a>
+            }
         </div>
 
         <!--Tin tức nổi bật-->

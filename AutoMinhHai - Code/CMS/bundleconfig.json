@@ -84,12 +84,6 @@
     ]
   },
   {
-    "outputFileName": "Scripts/front/menuMainController.js",
-    "inputFiles": [
-      "Scripts/front/menuMainController.js"
-    ]
-  },
-  {
     "outputFileName": "Scripts/front/cusRegisterController.js",
     "inputFiles": [
       "Scripts/front/cusRegisterController.js"
@@ -639,6 +633,12 @@
     "outputFileName": "Scripts/front/productHomeController.min.js",
     "inputFiles": [
       "Scripts/front/productHomeController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/sidebar.min.css",
+    "inputFiles": [
+      "Content/Front/css/sidebar.css"
     ]
   }
 ]

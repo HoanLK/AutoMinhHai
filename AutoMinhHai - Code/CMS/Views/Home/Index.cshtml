@@ -7,7 +7,7 @@
     <!--Banner-->
     <div class="banner hidden-xs hidden-sm">
         <p class="ten-co">Doanh nghiệp tư nhân minh hải</p>
-        <div>
+        <div class="thongtin">
             <p class="tieude">Chuyên:</p>
             <p class="noidung">
                 - Sửa chữa ô tô các loại <br />
@@ -22,6 +22,39 @@
                 </p>
             </div>
         </div>
+        <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000">
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+                <!-- Third Slide -->
+                <div class="item active">
+                    <!-- Slide Background -->
+                    <img src="~/Content/Front/images/trangchu/banner.jpg" alt="Bootstrap Touch Slider" class="slide-image" />
+                    <div class="bs-slider-overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_left">
+                                <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+            </div><!-- End of Wrapper For Slides -->
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End  bootstrap-touch-slider Slider -->
     </div>
 
     <!--Tìm kiếm xe-->
@@ -56,7 +89,7 @@
             <!--Form chọn dòng xe-->
             <form>
                 <label>Tìm kiếm thông tin xe</label>
-                <input type="text" placeholder="Nhập thông tin cần tìm..." value="" class="form-control" ng-keypress="($event.which === 13)?search():0" ng-model="searchText"/>
+                <input type="text" placeholder="Nhập thông tin cần tìm..." value="" class="form-control" ng-keypress="($event.which === 13)?search():0" ng-model="searchText" />
             </form>
         </div>
 
@@ -204,7 +237,7 @@
             <div class="cacbaiviet">
 
                 <!--Bài viết-->
-                <div class="baiviet col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left" ng-repeat="(index, value) in tinNoiBats">
+                <div class="baiviet col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-repeat="(index, value) in tinNoiBats" ng-class="{'pull-left' : (index % 2) == 0, 'pull-right' : (index % 2) == 1}">
                     <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
 
                     <!--Tên bài viết-->

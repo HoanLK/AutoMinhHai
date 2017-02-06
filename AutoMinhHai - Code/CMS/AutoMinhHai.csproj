@@ -2280,6 +2280,11 @@
     <Content Include="Content\Front\css\phutung.min.css">
       <DependentUpon>phutung.css</DependentUpon>
     </Content>
+    <Content Include="Content\Front\css\sidebar.css" />
+    <Content Include="Content\Front\css\sidebar.min.css">
+      <DependentUpon>sidebar.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\slideBanner.css" />
     <Content Include="Content\Front\css\suachua.css" />
     <Content Include="Content\Front\css\suachua.min.css">
       <DependentUpon>suachua.css</DependentUpon>
@@ -2313,7 +2318,7 @@
     <Content Include="Content\Front\images\suachua\baiviet-1.png" />
     <Content Include="Content\Front\images\suachua\baiviet-2.png" />
     <Content Include="Content\Front\images\suachua\banner.png" />
-    <Content Include="Content\Front\images\trangchu\banner.png" />
+    <Content Include="Content\Front\images\trangchu\banner.jpg" />
     <Content Include="Content\Front\images\trangchu\gioithieu.png" />
     <Content Include="Content\Front\images\trangchu\goctuvan-1.png" />
     <Content Include="Content\Front\images\trangchu\goctuvan-2.png" />
@@ -2904,6 +2909,9 @@
     <Content Include="Models\AutoMinhHai.edmx.diagram">
       <DependentUpon>AutoMinhHai.edmx</DependentUpon>
     </Content>
+    <Content Include="bundleconfig.json.bindings">
+      <DependentUpon>bundleconfig.json</DependentUpon>
+    </Content>
     <None Include="Project_Readme.html" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\DanhMucBaiViet\Index.cshtml" />
@@ -2916,6 +2924,7 @@
     <Content Include="Views\Home\SuaChua.cshtml" />
     <Content Include="Views\Shared\_MenuLeft.cshtml" />
     <None Include="Properties\PublishProfiles\AutoMinhHai.pubxml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
