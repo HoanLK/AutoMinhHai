@@ -165,3 +165,4 @@ F:\Documents\Work\Code\AutoMinhHai\AutoMinhHai - Code\CMS\bin\WebMatrix.WebData.
 F:\Documents\Work\Code\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Debug\AutoMinhHai.csprojResolveAssemblyReference.cache
 F:\Documents\Work\Code\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Debug\CMS.dll
 F:\Documents\Work\Code\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Debug\CMS.pdb
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Debug\AutoMinhHai.csprojResolveAssemblyReference.cache

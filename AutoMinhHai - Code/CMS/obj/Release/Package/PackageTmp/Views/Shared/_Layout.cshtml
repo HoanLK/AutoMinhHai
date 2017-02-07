@@ -54,6 +54,8 @@
     <link href="~/Content/Front/css/sidebar.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/slideBanner.css" rel="stylesheet" />
 
+    <script src="~/Content/Front/js/modernizr.custom.min.js"></script>
+
     <style>
         .fixed {
             position: fixed;
@@ -95,6 +97,7 @@
                 <button class="dl-trigger">Open Menu</button>
                 <div>
                     <a href="@Url.Action("Index","Home")" class="logo"><img src="~/Content/front/images/logo.png" /></a>
+                    <a href="tel:0313 540 888" class="phone">0313.540.888</a>
                     <a id="button-search" class="search"><i class="fa fa-search search-btn"></i></a>
                 </div>
                 <ul class="dl-menu">
@@ -210,7 +213,7 @@
                             <p style="font-size: 1.5em;"><i class="fa fa-envelope"></i> 0914486666.qn@gmail.com</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -254,6 +257,10 @@
     <!--AngularJS custom-->
     <script src="~/Scripts/Front/frontApp.js"></script>
     <script src="~/Scripts/Front/pagination/dirPagination.min.js"></script>
+
+    <!--Tự viết-->
+    <script src="~/Content/Front/js/myScripts.min.js"></script>
+    <script src="~/Content/Front/js/jquery.dlmenu.min.js"></script>
 
     <!--Loading-->
     <script src="~/Scripts/loading-spinner/spin.min.js"></script>
@@ -304,5 +311,24 @@
     <!--Search-->
     <script src="~/Scripts/Front/searchController.min.js"></script>
     <script src="~/Scripts/Front/showSearchController.min.js"></script>
+
+    <script>
+        $(function () {
+
+            $(window).bind('scroll', function () {
+                var navHeight = $('.mobile').height();
+                if ($(window).scrollTop() > navHeight) {
+                    $('#dl-menu').addClass('fixed');
+                }
+                else {
+                    $('#dl-menu').removeClass('fixed');
+                }
+            });
+
+            $('#dl-menu').dlmenu({
+                animationClasses: { classin: 'dl-animate-in-5', classout: 'dl-animate-out-5' }
+            });
+        });
+    </script>
 </body>
 </html>
