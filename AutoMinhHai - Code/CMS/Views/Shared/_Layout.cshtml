@@ -79,9 +79,9 @@
                     <li class="pull-left"><a href="/gioi-thieu">Giới thiệu</a></li>
                     <li class="pull-left"><a href="/sua-chua">Sửa chữa</a></li>
                     <li class="pull-left"><a href="/danh-muc-san-pham/mua-ban-xe-2">Mua bán xe</a></li>
-                    <li class="pull-left"><a href="/danh-muc-san-pham/phu-tung-3">Phụ tùng</a></li>
+                    <li class="pull-left"><a href="/phu-tung">Phụ tùng</a></li>
                     <li class="pull-left"><a href="/danh-muc-bai-viet/goc-tu-van-2">Tư vấn</a></li>
-                    <li class="pull-left"><a href="@Url.Action("Contact","Home")">Liên hệ</a></li>
+                    <li class="pull-left"><a href="#" data-toggle="modal" data-target="#myModal">Liên hệ</a></li>
                 </ul>
             </div>
             <p class="diachi pull-right">
@@ -139,9 +139,9 @@
                 <li class="pull-left"><a href="/gioi-thieu">Giới thiệu</a></li>
                 <li class="pull-left"><a href="/sua-chua">Sửa chữa</a></li>
                 <li class="pull-left"><a href="/danh-muc-san-pham/mua-ban-xe-2">Mua bán xe</a></li>
-                <li class="pull-left"><a href="/danh-muc-san-pham/phu-tung-3">Phụ tùng</a></li>
+                <li class="pull-left"><a href="/phu-tung">Phụ tùng</a></li>
                 <li class="pull-left"><a href="/danh-muc-bai-viet/goc-tu-van-2">Tư vấn</a></li>
-                <li class="pull-left"><a href="@Url.Action("Contact","Home")">Liên hệ</a></li>
+                <li class="pull-left"><a href="#" data-toggle="modal" data-target="#myModal">Liên hệ</a></li>
             </ul>
 
             <!--Thông tin-->
@@ -188,6 +188,41 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width:90%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="modal-title text-uppercase" id="myModalLabel" style="font-size: 1.5em">Doanh nghiệp tư nhân minh hải</p>
+                </div>
+                <div class="modal-body">
+                    <div style="display: inline-block; width: 100%;">
+                        <div class="col-md-7">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.2263420435766!2d106.65901461443376!3d20.862925286088476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a43a5d22e2d%3A0xb7848d2af9028a21!2zMzM3IEjDuW5nIFbGsMahbmcsIFRoxrDhu6NuZyBMw70sIEjhu5NuZyBCw6BuZywgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1486450020312" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <noframes>Xin lỗi, trình duyệt của bạn không hỗ trợ hiển thị bản đồ.</noframes>
+                        </div>
+                        <div class="col-md-5">
+                            <p style="font-size: 2.8em; text-align: center; font-weight:700;">Doanh nghiệp tư nhân Minh Hải</p>
+                            <p style="font-size: 1.5em;"><i class="fa fa-map-marker"></i> Số 337 - Hùng Vương, Hồng Bàng, Hải Phòng</p>
+                            <p style="font-size: 1.5em;"><i class="fa fa-phone"></i> 091 448 6666 - 098 555 3688 - 0313 540 888</p>
+                            <p style="font-size: 1.5em;"><i class="fa fa-fax"></i> 0313 540 555</p>
+                            <p style="font-size: 1.5em;"><i class="fa fa-envelope"></i> 0914486666.qn@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <!--jquery-->
     @*<script src="~/Scripts/jquery-3.1.1.min.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>*@
@@ -226,7 +261,7 @@
     <script src="~/Scripts/loading-spinner/angular-loading-spinner.js"></script>
 
     <!--Banner-->
-    @*<script src="~/Scripts/Front/bannerController.min.js"></script>*@
+    <script src="~/Scripts/Front/bannerController.min.js"></script>
 
     <!--Category Post-->
     <script src="~/Scripts/Front/categoryPostFactory.min.js"></script>

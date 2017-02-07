@@ -22,6 +22,11 @@ namespace CMS.Areas.Admin.Controllers
             return View(await db.Product.ToListAsync());
         }
 
+        public async Task<ActionResult> PhuTung()
+        {
+            return View(await db.Product.ToListAsync());
+        }
+
         [AllowAnonymous]
         public JsonResult RelateProduct(int idProduct, int numLimit)
         {
@@ -115,6 +120,29 @@ namespace CMS.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "idProduct,idCategoryProduct,idUserCreated,idUserModified,timeCreated,timeModified,title,alias,content,note,description,published,image,tags,version,deleted,feature,metadescription,metakewords,author,robots,gra0w40_specification,gra0w40_technical,gra5w20_specification,gra5w20_technical,gra5w30_specification,gra5w30_technical,gra5w50_specification,gra5w50_technical,gra10w30_specification,gra10w30_technical,gra15w50_specification,gra15w50_technical")] Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Product.Add(product);
+                await db.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+
+            return View(product);
+        }
+
+        // GET: Admin/Products/Create
+        public ActionResult CreatePhuTung()
+        {
+            return View();
+        }
+
+        // POST: Admin/Products/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> CreatePhuTung([Bind(Include = "idProduct,idCategoryProduct,idUserCreated,idUserModified,timeCreated,timeModified,title,alias,content,note,description,published,image,tags,version,deleted,feature,metadescription,metakewords,author,robots,gra0w40_specification,gra0w40_technical,gra5w20_specification,gra5w20_technical,gra5w30_specification,gra5w30_technical,gra5w50_specification,gra5w50_technical,gra10w30_specification,gra10w30_technical,gra15w50_specification,gra15w50_technical")] Product product)
         {
             if (ModelState.IsValid)
             {

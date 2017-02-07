@@ -3,7 +3,7 @@
     ViewBag.Title = @Model.title;
 }
 
-<section class="chitietmuaxe chitietphutung" >
+<section class="chitietmuaxe chitietphutung col-xs-12 col-sm-12 col-md-12 col-lg-12" >
     <!--Phần bài viết-->
     <article class="col-xs-12 col-sm-12 col-md-9 col-lg-9 pull-right" ng-controller="productController">
         <input type="hidden" value="@Model.idProduct" id="idProduct" />
@@ -55,7 +55,7 @@
     </article>
 
     <!--Cột bên trái-->
-    @Html.Partial("_MenuLeft")
+    @Html.Partial("_Sidebar")
 </section>
 
 

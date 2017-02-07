@@ -104,19 +104,19 @@
             $scope.product.timeModified = new Date()
             $http.put('/API/ProductsAPI/' + $scope.product.idProduct, $scope.product)
             .success(function () {
-                toastr.success('Thành công', 'Lưu Sản phẩm');
+                toastr.success('Thành công', 'Lưu xe');
             })
             .error(function () {
-                toastr.error('Thất bại', 'Thêm Sản phẩm')
+                toastr.error('Thất bại', 'Thêm xe')
             });
         } else {
             $http.post('/API/ProductsAPI/', $scope.product)
             .success(function () {
-                toastr.success('Thành công', 'Thêm Sản phẩm');
+                toastr.success('Thành công', 'Thêm xe');
                 $window.location.href = '/Admin/Products';
             })
             .error(function () {
-                toastr.error('Thất bại', 'Thêm Sản phẩm');
+                toastr.error('Thất bại', 'Thêm xe');
             });
         }
     };
@@ -131,7 +131,7 @@
                 $window.location.href = '/Admin/Products';
             })
             .error(function () {
-                toastr.error('Thất bại', 'Lưu Sản phẩm');
+                toastr.error('Thất bại', 'Lưu xe');
             });
         } else {
             $http.post('/API/ProductsAPI/', $scope.product)
@@ -139,7 +139,7 @@
                 $window.location.href = '/Admin/Products';
             })
             .error(function () {
-                toastr.error('Thất bại', 'Thêm Sản phẩm');
+                toastr.error('Thất bại', 'Thêm xe');
             });
         }
     };
@@ -154,7 +154,7 @@
                 $window.location.href = '/Admin/Products/Create';
             })
             .error(function () {
-                toastr.error('Thất bại', 'Lưu Danh mục')
+                toastr.error('Thất bại', 'Lưu xe')
             });
         } else {
             $http.post('/API/ProductsAPI/', $scope.product)
@@ -162,7 +162,7 @@
                 $window.location.href = '/Admin/Products/Create';
             })
             .error(function () {
-                toastr.error('Thất bại', 'Thêm Sản phẩm')
+                toastr.error('Thất bại', 'Thêm xe')
             });
         }
     };

@@ -64,7 +64,7 @@ namespace CMS.Areas.Admin.Controllers
             if (att == "xeCuHome" && att != null && value != null)
             {
                 string feature = value;
-                var model = db.Product.Where(p => p.feature == feature && p.published == 1 && p.idCategoryProduct == 2).Take(3);
+                var model = db.Product.Where(p => p.feature.Contains(feature) && p.published == 1 && p.idCategoryProduct == 2).Take(3);
 
                 return model;
             }

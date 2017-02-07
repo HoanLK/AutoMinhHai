@@ -3,7 +3,6 @@
 }
 
     header > .desktop {
-        height: 8em;
         box-shadow: 0 3px 5px rgba(0, 0, 0, .6);
         padding: 0;
     }
@@ -13,13 +12,13 @@
         }
 
             header > .desktop > .logo > img {
-                width: 12em;
-                margin: 0 auto;
+                width: 15em;
+                margin: 0.5em auto;
             }
 
         /*Menu*/
         header > .desktop > .menu {
-            height: 7em !important;
+            height: auto;
             padding: 0;
             margin: 1em 0 0 0;
         }
@@ -49,9 +48,18 @@
                     }
 
                         header > .desktop > .menu > ul > li.active > a, header > .desktop > .menu > ul > li > a:hover {
-                            background: rgb(189,189,189);
+                            background: #EEEEEE;
                             border-top: solid 3px rgb(198,40,40);
                         }
+
+                    header > .desktop > .menu > ul > li.active > a, header > .desktop > .diachi {
+                        margin: 0.5em 5.5em 0 0;
+                        letter-spacing: 1.3px;
+                        font-size: 1.1em;
+                        border-top: solid 1px #c62828;
+                        padding: 0.5em 0 0 1.5em;
+                    }
+
 
 /*Footer*/
 footer {
@@ -122,13 +130,14 @@ footer {
             height: 1%;
             overflow: hidden;
             background: rgb(198,40,40);
-            padding: 1em 2em;
+            padding: 1em;
             color: rgb(255, 255, 255);
         }
 
             /*Thông tin công ty*/
             footer > .footer > .thongtin > .info-co {
-                padding: 0;
+                padding: 0 1em;
+                width: 35%;
             }
 
                 footer > .footer > .thongtin > .info-co > .tieude {
@@ -152,7 +161,8 @@ footer {
 
             /*Giới thiệu về công ty*/
             footer > .footer > .thongtin > .gioithieu {
-                padding: 0;
+                padding: 0 1em;
+                width: 35%;
             }
 
                 footer > .footer > .thongtin > .gioithieu > .tieude {
@@ -174,7 +184,8 @@ footer {
 
             /*Bản đồ*/
             footer > .footer > .thongtin > .map {
-                padding: 0 0 0 3em;
+                padding: 0 3em;
+                width: 30%;
             }
 
                 footer > .footer > .thongtin > .map > .tieude {
@@ -281,6 +292,7 @@ footer {
         /*Thông tin công ty*/
         footer > .footer > .thongtin > .info-co {
             padding: 0 1em;
+            width: 50%;
         }
 
             footer > .footer > .thongtin > .info-co > .tieude {
@@ -303,6 +315,7 @@ footer {
         /*Giới thiệu về công ty*/
         footer > .footer > .thongtin > .gioithieu {
             padding: 0 1em;
+            width: 50%;
         }
 
             footer > .footer > .thongtin > .gioithieu > .tieude {
@@ -368,24 +381,28 @@ footer {
             padding: 1em;
         }
 
-            footer > .footer > .thongtin > .info-co > .noidung {
-                font-size: 1em;
+            footer > .footer > .thongtin > .info-co {
+                width: 100%;
             }
 
-                footer > .footer > .thongtin > .info-co > .noidung > p {
-                    letter-spacing: 0.5px;
-                    text-align: left;
+                footer > .footer > .thongtin > .info-co > .noidung {
+                    font-size: 1em;
                 }
 
-                    footer > .footer > .thongtin > .info-co > .noidung > p > i {
-                        font-size: 1.1em;
-                        width: 1.5em;
+                    footer > .footer > .thongtin > .info-co > .noidung > p {
+                        letter-spacing: 0.5px;
+                        text-align: left;
                     }
+
+                        footer > .footer > .thongtin > .info-co > .noidung > p > i {
+                            font-size: 1.1em;
+                            width: 1.5em;
+                        }
 
             /*Giới thiệu về công ty*/
             footer > .footer > .thongtin > .gioithieu {
-                padding: 0;
                 margin: 3em 0;
+                width: 100%;
             }
 
                 footer > .footer > .thongtin > .gioithieu > .noidung {
@@ -397,8 +414,9 @@ footer {
 
             /*Bản đồ*/
             footer > .footer > .thongtin > .map {
-                padding: 0;
+                padding: 0 1em;
                 margin: 0;
+                width: 100%;
             }
 
                 footer > .footer > .thongtin > .map > div > iframe {

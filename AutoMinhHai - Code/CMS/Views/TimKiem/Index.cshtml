@@ -17,7 +17,7 @@
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-show="products.length > 0" style="color: #F44336; font-size: 2em; padding-left: 3em;">Có {{products.length}} sản phẩm</p>
             <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-hide="products.length > 0" style="color: #F44336; font-size: 2em; padding-left: 3em;">Không có sản phầm nào phù hợp</p>
             <!--Sản phẩm-->
-            <div class="sanpham sp-1" dir-paginate="(index, value) in products | itemsPerPage:6" ng-show="products.length > 0">
+            <div class="sanpham " ng-class="{'sp-1': (index % 2 == 0) , 'sp-2': (index % 2 == 1)}" dir-paginate="(index, value) in products | itemsPerPage:6" ng-show="products.length > 0">
                 <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
 
                 <!--Thông tin xe-->

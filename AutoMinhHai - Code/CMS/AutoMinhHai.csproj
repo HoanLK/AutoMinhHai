@@ -211,6 +211,7 @@
     <Compile Include="Areas\Admin\Controllers\ProductsAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
     <Compile Include="Controllers\DanhMucSanPhamController.cs" />
+    <Compile Include="Controllers\PhuTungController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\BaiVietController.cs" />
     <Compile Include="Controllers\DanhMucBaiVietController.cs" />
@@ -2330,10 +2331,12 @@
     <Content Include="Content\Front\images\trangchu\taisao.png" />
     <Content Include="Content\Front\images\tuvan\banner.png" />
     <Content Include="Content\Images\images\banner%281%29.png" />
+    <Content Include="Content\Images\images\banner.jpg" />
     <Content Include="Content\Images\images\banner.png" />
     <Content Include="Content\Images\images\BanXe\muaxe-1.png" />
     <Content Include="Content\Images\images\TuVan\goctuvan-2.png" />
     <Content Include="Content\Images\_thumbs\Images\banner%281%29.png" />
+    <Content Include="Content\Images\_thumbs\Images\banner.jpg" />
     <Content Include="Content\Images\_thumbs\Images\banner.png" />
     <Content Include="Content\Images\_thumbs\Images\BanXe\muaxe-1.png" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\goctuvan-2.png" />
@@ -2388,6 +2391,10 @@
     <Content Include="Scripts\admin\danhsachOrderController.min.js">
       <DependentUpon>danhsachOrderController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\admin\danhsachPhuTungController.js" />
+    <Content Include="Scripts\admin\danhsachPhuTungController.min.js">
+      <DependentUpon>danhsachPhuTungController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\admin\danhsachPostController.min.js">
       <DependentUpon>danhsachPostController.js</DependentUpon>
     </Content>
@@ -2426,6 +2433,10 @@
     <Content Include="Scripts\admin\themOrderController.js" />
     <Content Include="Scripts\admin\themOrderController.min.js">
       <DependentUpon>themOrderController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\themPhuTungController.js" />
+    <Content Include="Scripts\admin\themPhuTungController.min.js">
+      <DependentUpon>themPhuTungController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\themPostController.min.js">
       <DependentUpon>themPostController.js</DependentUpon>
@@ -2901,6 +2912,8 @@
     <Content Include="bower_components\angular\README.md" />
     <Content Include="Areas\Admin\Views\Contacts\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Contacts\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Products\CreatePhuTung.cshtml" />
+    <Content Include="Areas\Admin\Views\Products\PhuTung.cshtml" />
     <None Include="bundleconfig.json" />
     <EntityDeploy Include="Models\AutoMinhHai.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -2925,6 +2938,7 @@
     <Content Include="Views\Shared\_MenuLeft.cshtml" />
     <None Include="Properties\PublishProfiles\AutoMinhHai.pubxml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\PhuTung\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

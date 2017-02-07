@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CMS.Models.Product>
+
+@{
+    ViewBag.Title = "Danh sách phụ tùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp">
+    <div ng-controller="danhsachPhuTungController">
+        <p>
+            <a href="@Url.Action("CreatePhuTung", "Products")" class="btn ink-reaction btn-raised btn-primary"><span class="fa fa-plus"></span> Thêm phụ tùng</a>
+        </p>
+
+        <div class="card">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div ui-grid-selection ui-grid-pagination ui-grid-resize-columns ui-grid-move-columns ui-grid="gridOptions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

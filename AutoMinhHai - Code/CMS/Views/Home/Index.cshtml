@@ -22,20 +22,20 @@
                 </p>
             </div>
         </div>
-        <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000">
+        <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" ng-controller="bannerController">
             <!-- Wrapper For Slides -->
             <div class="carousel-inner" role="listbox">
                 <!-- Third Slide -->
-                <div class="item active">
+                <div class="item active" ng-class="{'active':index==0}" ng-repeat="(index, value) in banners">
                     <!-- Slide Background -->
-                    <img src="~/Content/Front/images/trangchu/banner.jpg" alt="Bootstrap Touch Slider" class="slide-image" />
+                    <img ng-src="{{value.image}}" alt="Bootstrap Touch Slider" class="slide-image" />
                     <div class="bs-slider-overlay"></div>
                     <div class="container">
                         <div class="row">
                             <!-- Slide Text Layer -->
                             <div class="slide-text slide_style_left">
-                                <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
-                                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">select one</a>
+                                <p data-animation="animated fadeInLeft">{{value.title}}</p>
+                                <a href="{{value.link}}" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">{{value.text_link}}</a>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
             </div>
 
             <!--Nút xem thêm-->
-            <a href="/danh-muc-san-pham/phu-tung-3" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
+            <a href="/phu-tung" class="xemthem">Xem thêm <i class="fa fa-angle-double-right"></i></a>
         </div>
     </article>
 
@@ -249,6 +249,7 @@
                     </div>
                 </div>
             </div>
+            <a href="/danh-muc-bai-viet/goc-tu-van-2" style="text-align: end; display: inherit; font-size: 1.3em;">Xem thêm <i class="fa fa-angle-double-right"></i></a>
         </div>
 
         <!--Mua bán xe cũ-->
@@ -276,6 +277,7 @@
                     </div>
                 </div>
             </div>
+            <a href="/danh-muc-san-pham/mua-ban-xe-2" style="text-align: end; display: inherit; font-size: 1.3em;">Xem thêm <i class="fa fa-angle-double-right"></i></a>
         </div>
     </article>
 </section>

@@ -3,8 +3,8 @@
     $scope.products = [];
     $scope.gridOptions = {};
 
-    //Lấy danh sách Post
-    $http.get('/API/ProductsAPI/').success(function (data) {
+    //Lấy danh sách XE
+    $http.get('/API/ProductsAPI?att=idCategoryProduct&&value=2').success(function (data) {
         $scope.gridOptions.data = data;
         angular.forEach(data, function (value, key) {
             $http.get('/API/CategoryProductsAPI/' + data[key].idCategoryProduct)
@@ -91,7 +91,7 @@
             //Xóa
             $http.delete('/API/ProductsAPI/' + idProduct)
             .success(function () {
-                $http.get('/API/ProductsAPI/').success(function (data) { $scope.gridOptions.data = data; });
+                $http.get('/API/ProductsAPI?att=idCategoryProduct&&value=2').success(function (data) { $scope.gridOptions.data = data; });
                 toastr.success('Thành công', 'Xóa');
             });
         }

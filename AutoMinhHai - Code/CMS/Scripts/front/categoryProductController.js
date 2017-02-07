@@ -5,7 +5,7 @@
     $scope.product = {};
 
     //Lấy tất cả danh mục
-    $http.get('/API/CategoryProductsAPI?att=idCategoryParent&&value=' + 1)
+    $http.get('/API/CategoryProductsAPI?att=idCategoryParent&&value=' + $scope.idCategoryProduct)
         .success(function (categoryProducts) {
             $scope.categoryProducts = categoryProducts;
 

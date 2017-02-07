@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<CMS.Models.Product>
 
 @{
-    ViewBag.Title = "Danh sách Sản phẩm";
+    ViewBag.Title = "Danh sách Xe";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
 <div ng-app="myApp">
     <div ng-controller="danhsachProductController">
         <p>
-            <a href="@Url.Action("Create", "Products")" class="btn ink-reaction btn-raised btn-primary"><span class="fa fa-plus"></span> Thêm</a>
+            <a href="@Url.Action("Create", "Products")" class="btn ink-reaction btn-raised btn-primary"><span class="fa fa-plus"></span> Thêm xe</a>
         </p>
 
         <div class="card">
