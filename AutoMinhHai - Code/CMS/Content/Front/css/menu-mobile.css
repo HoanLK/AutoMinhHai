@@ -39,15 +39,27 @@
         }
 
             .dl-menuwrapper div .logo {
-                width: 80%;
+                width: 20%;
                 display: block;
                 text-align: center;
                 float: left;
+                padding: 0.5em 0;
             }
 
                 .dl-menuwrapper div .logo > img {
-                    width: 20%;
+                    width: 100%;
                 }
+
+            .dl-menuwrapper div .phone {
+                font-weight: bold;
+                font-size: 4em;
+                width: 70%;
+                text-align: center;
+                display: inline-block;
+                padding: 0;
+                color: rgb(198,40,40);
+                text-decoration: none;
+            }
 
             .dl-menuwrapper div .search {
                 position: absolute;
@@ -421,15 +433,26 @@ All this is done for any sub-level being entered.
         }
 
             .dl-menuwrapper div .logo {
-                width: 80%;
+                width: 25%;
                 text-align: center;
                 float: left;
             }
 
                 .dl-menuwrapper div .logo > img {
-                    width: 30%;
+                    width: 90%;
                     height: 100%;
                     margin: 0.5em 0 0 0;
+                }
+
+                .dl-menuwrapper div .phone{
+                    font-weight: bold;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 60%;
+                    text-align: center;
+                    font-size: 2em;
+                    padding: 0.2em 0;
+                    color: rgb(198,40,40);
                 }
 
             .dl-menuwrapper div .search {

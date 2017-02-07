@@ -1320,6 +1320,9 @@
     <Content Include="Content\admin\css\theme-default\bootstrap.min.css">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
+    <Content Include="Content\admin\css\theme-default\bootstrap.min.min.css">
+      <DependentUpon>bootstrap.min.css</DependentUpon>
+    </Content>
     <Content Include="Content\admin\css\theme-default\font-awesome.css" />
     <Content Include="Content\admin\css\theme-default\font-awesome.min.css" />
     <Content Include="Content\admin\css\theme-default\libs\blueimp-file-upload\jquery.fileupload.css" />
@@ -2330,6 +2333,18 @@
     <Content Include="Content\Front\images\trangchu\suachua.png" />
     <Content Include="Content\Front\images\trangchu\taisao.png" />
     <Content Include="Content\Front\images\tuvan\banner.png" />
+    <Content Include="Content\Front\js\jquery.dlmenu.js" />
+    <Content Include="Content\Front\js\jquery.dlmenu.min.js">
+      <DependentUpon>jquery.dlmenu.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\modernizr.custom.js" />
+    <Content Include="Content\Front\js\modernizr.custom.min.js">
+      <DependentUpon>modernizr.custom.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\myScripts.js" />
+    <Content Include="Content\Front\js\myScripts.min.js">
+      <DependentUpon>myScripts.js</DependentUpon>
+    </Content>
     <Content Include="Content\Images\images\banner%281%29.png" />
     <Content Include="Content\Images\images\banner.jpg" />
     <Content Include="Content\Images\images\banner.png" />
