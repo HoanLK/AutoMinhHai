@@ -514,5 +514,23 @@
     "inputFiles": [
       "Scripts/front/productHomeController.js"
     ]
+  },
+  {
+    "outputFileName": "Content/Front/js/myScripts.min.js",
+    "inputFiles": [
+      "Content/Front/js/myScripts.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/jquery.dlmenu.min.js",
+    "inputFiles": [
+      "Content/Front/js/jquery.dlmenu.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/modernizr.custom.min.js",
+    "inputFiles": [
+      "Content/Front/js/modernizr.custom.js"
+    ]
   }
 ]
