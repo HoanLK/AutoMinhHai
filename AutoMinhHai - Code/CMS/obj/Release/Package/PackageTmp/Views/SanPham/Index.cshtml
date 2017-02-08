@@ -45,7 +45,7 @@
                     <span us-spinner="{radius:15, width:4, length: 8}"></span>
                     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-hide="products.length > 0" style="color: #F44336; font-size: 2em; padding-left: 3em;">Chưa có sản phẩm</p>
                     <!--Xe-->
-                    <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" class="sanpham" dir-paginate="(index, value) in products | itemsPerPage:4" ng-hide="products.length > 0">
+                    <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" class="sanpham" dir-paginate="(index, value) in products | itemsPerPage:4" ng-show="products.length > 0">
                         <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive" />
                         <p>{{value.title}}</p>
                     </a>

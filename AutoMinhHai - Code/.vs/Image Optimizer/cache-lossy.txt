@@ -32,3 +32,7 @@ D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GocTuVa
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\GocTuVan\mẹo nhỏ trong chọn gạch phòng bếp\phong bep.jpg|2517
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\ThietBiNhaTam\bồn tắm 02.jpg|2552
 D:\Project\KNT\WebsiteGachMenLongKhanh\CMS\Content\Images\_thumbs\Images\ThietBiNhaTam\bồn tắm nằm 01.jpg|2336
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\TuVan\goctuvan-2.png|38766
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\banner(1).png|114042
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\banner.png|38269
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\BanXe\muaxe-1.png|28188
