@@ -36,3 +36,10 @@ D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\TuVan\go
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\banner(1).png|114042
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\banner.png|38269
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\BanXe\muaxe-1.png|28188
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\banner(1).png|3273
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\TuVan\goctuvan-2.png|5306
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\banner.png|2134
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\BanXe\muaxe-1.png|4420
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\TuVan\ve sinh ghe oto\hut bui xe.png|4845
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\TuVan\ve sinh ghe oto\hut bui xe.png|41299
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\BanXe\BMW\bmw1.jpg|947
