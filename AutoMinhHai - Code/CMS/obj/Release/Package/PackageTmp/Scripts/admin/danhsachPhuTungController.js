@@ -4,7 +4,7 @@
     $scope.gridOptions = {};
 
     //Lấy danh sách XE
-    $http.get('/API/ProductsAPI?att=idCategoryProduct&&value=3').success(function (data) {
+    $http.get('/API/ProductsAPI?att=idCategoryPhuTung&&value=2').success(function (data) {
         $scope.gridOptions.data = data;
         angular.forEach(data, function (value, key) {
             $http.get('/API/CategoryProductsAPI/' + data[key].idCategoryProduct)

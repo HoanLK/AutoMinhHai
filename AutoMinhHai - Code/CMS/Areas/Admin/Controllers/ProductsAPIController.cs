@@ -36,6 +36,14 @@ namespace CMS.Areas.Admin.Controllers
                 return model;
             }
 
+            if (att == "idCategoryPhuTung" && att != null && value != null)
+            {
+                int idCategoryProduct = int.Parse(value);
+                var model = db.Product.Where(p => p.idCategoryProduct != idCategoryProduct && p.idCategoryProduct !=1 && p.published == 1).OrderByDescending(p => p.timeModified);
+
+                return model;
+            }
+
             if (att == "spMoi" && att != null && value != null)
             {
                 int idCategoryProduct = int.Parse(value);

@@ -25,11 +25,11 @@
                     <!--Tóm tắt thông tin-->
                     <div class="text">
                         <p class="ten">{{product.title}}</p>
-                        <p class="info">Hãng: <span>{{product.hang}}</span></p>
-                        <p class="info">Màu xe: <span>{{product.mau}}</span></p>
-                        <p class="info">Tình trạng: <span>{{product.tinhTrang}}</span></p>
-                        <p class="info">Hộp số: <span>{{product.hopSo}}</span></p>
-                        <p class="info">Mô tả: <span>{{product.description}}</span></p>
+                        <p class="info" ng-show="product.hang != null">Hãng: <span>{{product.hang}}</span></p>
+                        <p class="info" ng-show="product.mau != null">Màu xe: <span>{{product.mau}}</span></p>
+                        <p class="info" ng-show="product.tinhTrang != null">Tình trạng: <span>{{product.tinhTrang}}</span></p>
+                        <p class="info" ng-show="product.hopSo != null">Hộp số: <span>{{product.hopSo}}</span></p>
+                        <p class="info">Mô tả: <span ng-bind-html="product.description"></span></p>
                         <p class="lienhe"><span>Quý khách muốn mua xin vui lòng liên hệ: </span>091 448 6666 - 098 555 3688</p>
                     </div>
                 </div>
