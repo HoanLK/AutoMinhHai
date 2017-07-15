@@ -532,5 +532,11 @@
     "inputFiles": [
       "Content/Front/js/modernizr.custom.js"
     ]
+  },
+  {
+    "outputFileName": "Content/Front/css/slideBanner.min.css",
+    "inputFiles": [
+      "Content/Front/css/slideBanner.css"
+    ]
   }
 ]

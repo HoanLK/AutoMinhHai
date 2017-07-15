@@ -6,7 +6,7 @@
 
     <!--Banner-->
     <div class="banner hidden-xs hidden-sm">
-        <p class="ten-co">Doanh nghiệp tư nhân minh hải</p>
+        <h1 class="ten-co">Doanh nghiệp tư nhân minh hải</h1>
         <div class="thongtin">
             <p class="tieude">Chuyên:</p>
             <p class="noidung">
@@ -28,7 +28,7 @@
                 <!-- Third Slide -->
                 <div class="item" ng-class="{'active':index==0}" ng-repeat="(index, value) in banners">
                     <!-- Slide Background -->
-                    <img ng-src="{{value.image}}" alt="Bootstrap Touch Slider" class="slide-image" />
+                    <img ng-src="{{value.image}}" alt="{{value.title}}" class="slide-image" />
                     <div class="bs-slider-overlay"></div>
                     <div class="container">
                         <div class="row">
@@ -111,7 +111,7 @@
 
         <!--Từng dịch vụ-->
         <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img src="~/Content/front/images/trangchu/gioithieu.png" alt="" class="img-responsive" />
+            <img src="~/Content/front/images/trangchu/gioithieu.png" alt="Giới thiệu" class="img-responsive" />
 
             <!--Thông tim-->
             <div class="text">
@@ -129,7 +129,7 @@
 
         <!--Từng dịch vụ-->
         <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img src="~/Content/front/images/trangchu/suachua.png" alt="" class="img-responsive" />
+            <img src="~/Content/front/images/trangchu/suachua.png" alt="Sửa chữa" class="img-responsive" />
 
             <!--Thông tim-->
             <div class="text">
@@ -147,7 +147,7 @@
 
         <!--Từng dịch vụ-->
         <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img src="~/Content/front/images/trangchu/muaxe.png" alt="" class="img-responsive" />
+            <img src="~/Content/front/images/trangchu/muaxe.png" alt="Mua xe" class="img-responsive" />
 
             <!--Thông tim-->
             <div class="text">
@@ -165,7 +165,7 @@
 
         <!--Từng dịch vụ-->
         <div class="dichvu col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <img src="~/Content/front/images/trangchu/phutung.png" alt="" class="img-responsive" />
+            <img src="~/Content/front/images/trangchu/phutung.png" alt="Phụ tùng" class="img-responsive" />
 
             <!--Thông tim-->
             <div class="text">
@@ -184,7 +184,7 @@
 
     <!--Tại sao nên chọn chúng tôi-->
     <article class="taisao">
-        <img src="~/Content/front/images/trangchu/taisao.png" alt="" class="img-responsive col-xs-12 col-sm-12 col-md-6 col-lg-7" />
+        <img src="~/Content/front/images/trangchu/taisao.png" alt="Câu hỏi" class="img-responsive col-xs-12 col-sm-12 col-md-6 col-lg-7" />
 
         <!--Phần chữ-->
         <div class="text col-xs-12 col-sm-12 col-md-6 col-lg-5">

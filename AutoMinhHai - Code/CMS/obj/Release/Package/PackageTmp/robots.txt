@@ -1,3 +1,3 @@
 ﻿User-agent: *
 Disallow: 
-Sitemap: http://www./sitemap.xml
+Sitemap: http://www.minhhaiauto.com/sitemap.xml

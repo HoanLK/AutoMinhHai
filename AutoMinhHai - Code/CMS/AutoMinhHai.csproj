@@ -2289,6 +2289,9 @@
       <DependentUpon>sidebar.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\css\slideBanner.css" />
+    <Content Include="Content\Front\css\slideBanner.min.css">
+      <DependentUpon>slideBanner.css</DependentUpon>
+    </Content>
     <Content Include="Content\Front\css\suachua.css" />
     <Content Include="Content\Front\css\suachua.min.css">
       <DependentUpon>suachua.css</DependentUpon>
@@ -2357,10 +2360,30 @@
     <Content Include="Content\Images\images\BanXe\chervelet\thong-so-ki-thuat.jpg" />
     <Content Include="Content\Images\images\BanXe\muaxe-1.png" />
     <Content Include="Content\Images\images\BanXe\volwgagen\volkswagen .jpg" />
+    <Content Include="Content\Images\images\phu tung\camera\camera-hanh-trinh-DrivePro-200-Transcend-6.jpg" />
+    <Content Include="Content\Images\images\phu tung\camera\camera-hanh-trinh-oto-s908.jpg" />
+    <Content Include="Content\Images\images\phu tung\camera\cmr1.jpg" />
+    <Content Include="Content\Images\images\phu tung\camera\dashcam-multiple.jpg" />
     <Content Include="Content\Images\images\phu tung\gat mua.jpeg" />
+    <Content Include="Content\Images\images\phu tung\guong\guong cau loi\guong1.JPG" />
+    <Content Include="Content\Images\images\phu tung\guong\guong chieu hau\gunog chieu hau bmv\guong chieu hau 3.png" />
+    <Content Include="Content\Images\images\phu tung\guong\guong chieu hau\gương chiếu hậu Forte đời 2011\guong chieu hau.jpg" />
+    <Content Include="Content\Images\images\TuVan\cac dang hong cua lop\LOP.jpg" />
+    <Content Include="Content\Images\images\TuVan\cach chinh guong chieu hau\guongchieuhau.jpg" />
+    <Content Include="Content\Images\images\TuVan\CACH LAU TRAN XE O TO\lau-tran.jpg" />
     <Content Include="Content\Images\images\TuVan\giu kinh chan oto luon sang bong\kinh chan gio.jpg" />
     <Content Include="Content\Images\images\TuVan\goctuvan-2.png" />
     <Content Include="Content\Images\images\TuVan\khu mui xe oto\khu mui o to.jpg" />
+    <Content Include="Content\Images\images\TuVan\khu mui xe ôt\khu mui.png" />
+    <Content Include="Content\Images\images\TuVan\kiem tra dinh ki\bao duong xe.jpg" />
+    <Content Include="Content\Images\images\TuVan\lam gi khi oto bi chet may\o to chet may.jpg" />
+    <Content Include="Content\Images\images\TuVan\lam gi khi xe ban bi ngap nuoc\nuoc lut xe.jpg" />
+    <Content Include="Content\Images\images\TuVan\lam gi khi xe bi mat phanh\lai xe phanh.jpg" />
+    <Content Include="Content\Images\images\TuVan\lam gi khi xe chet ac quy\chet ac quy.jpg" />
+    <Content Include="Content\Images\images\TuVan\meo lai xe an toan\so tu dong.jpg" />
+    <Content Include="Content\Images\images\TuVan\nen và khong nen khi xe bi xit lop\xe_xit_lop.jpg" />
+    <Content Include="Content\Images\images\TuVan\tim hieu ve xe mat lai\mat lai.jpg" />
+    <Content Include="Content\Images\images\TuVan\ve sinh ghe da oto\ghe da oto.jpg" />
     <Content Include="Content\Images\images\TuVan\ve sinh ghe oto\hut bui xe.png" />
     <Content Include="Content\Images\images\TuVan\ve sinh noi that oto tai nha\minhhai1%281%29.jpg" />
     <Content Include="Content\Images\images\TuVan\ve sinh noi that oto tai nha\minhhai1.jpg" />
@@ -2376,10 +2399,30 @@
     <Content Include="Content\Images\_thumbs\Images\BanXe\chervelet\thong-so-ki-thuat.jpg" />
     <Content Include="Content\Images\_thumbs\Images\BanXe\muaxe-1.png" />
     <Content Include="Content\Images\_thumbs\Images\BanXe\volwgagen\volkswagen .jpg" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\camera\camera-hanh-trinh-DrivePro-200-Transcend-6.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\camera\camera-hanh-trinh-oto-s908.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\camera\cmr1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\camera\dashcam-multiple.jpg" />
     <Content Include="Content\Images\_thumbs\Images\phu tung\gat mua.jpeg" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\guong\guong cau loi\guong1.JPG" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\guong\guong chieu hau\gunog chieu hau bmv\guong chieu hau 3.png" />
+    <Content Include="Content\Images\_thumbs\Images\phu tung\guong\guong chieu hau\gương chiếu hậu Forte đời 2011\guong chieu hau.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\cac dang hong cua lop\LOP.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\cach chinh guong chieu hau\guongchieuhau.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\CACH LAU TRAN XE O TO\lau-tran.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\giu kinh chan oto luon sang bong\kinh chan gio.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\goctuvan-2.png" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\khu mui xe oto\khu mui o to.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\khu mui xe ôt\khu mui.png" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\kiem tra dinh ki\bao duong xe.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\lam gi khi oto bi chet may\o to chet may.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\lam gi khi xe ban bi ngap nuoc\nuoc lut xe.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\lam gi khi xe bi mat phanh\lai xe phanh.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\lam gi khi xe chet ac quy\chet ac quy.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\meo lai xe an toan\so tu dong.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\nen và khong nen khi xe bi xit lop\xe_xit_lop.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\tim hieu ve xe mat lai\mat lai.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TuVan\ve sinh ghe da oto\ghe da oto.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\ve sinh ghe oto\hut bui xe.png" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\ve sinh noi that oto tai nha\minhhai1%281%29.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TuVan\ve sinh noi that oto tai nha\minhhai1.jpg" />

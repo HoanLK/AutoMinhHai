@@ -82,3 +82,7 @@ D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\bin\WebMatrix.WebData.xml
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Release\CMS.dll
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Release\CMS.pdb
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\obj\Release\AutoMinhHai.csprojResolveAssemblyReference.cache
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\bin\CKFinder.pdb
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\bin\CKFinder_FileEditor.pdb
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\bin\CKFinder_ImageResize.pdb
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\bin\CKFinder_Watermark.pdb

@@ -43,3 +43,8 @@ D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\TuVan\ve sinh ghe oto\hut bui xe.png|4845
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\TuVan\ve sinh ghe oto\hut bui xe.png|41299
 D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\BanXe\BMW\bmw1.jpg|947
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\images\phu tung\guong\guong chieu hau\gương chiếu hậu Forte đời 2011\guong chieu hau.jpg|68095
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\banner\banner 2(1).jpg|1407
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\BanXe\BMW\bmw.jpg|2235
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\BanXe\chervelet\chevrolet-cruze.jpg|2293
+D:\Project\KNT\AutoMinhHai\AutoMinhHai - Code\CMS\Content\Images\_thumbs\Images\phu tung\guong\guong chieu hau\gương chiếu hậu Forte đời 2011\guong chieu hau.jpg|2576
